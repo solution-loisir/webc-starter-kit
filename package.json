@@ -1,0 +1,44 @@
+{
+  "name": "webc-starter-kit",
+  "description": "A starter project for Eleventy (11ty) using WebC as a main template langage. Also includes opiniated assets processing and a few more bells and whistles.",
+  "version": "0.1.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.23",
+    "@11ty/eleventy-fetch": "^3.0.0",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@11ty/eleventy-plugin-webc": "^0.8.1",
+    "@11ty/is-land": "^3.0.0",
+    "@toycode/markdown-it-class": "^1.2.4",
+    "esbuild": "^0.16.14",
+    "lightningcss": "^1.18.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-eleventy-img": "^0.9.0",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "uslug": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solution-loisir/webc-starter-kit.git"
+  },
+  "keywords": [
+    "Eleventy",
+    "11ty",
+    "WebC",
+    "ssg"
+  ],
+  "author": "Mathieu Huot",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/solution-loisir/webc-starter-kit/issues"
+  },
+  "homepage": "https://github.com/solution-loisir/webc-starter-kit#readme"
+}
