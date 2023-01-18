@@ -1,0 +1,4 @@
+---
+layout: base.webc
+---
+<h1 @text="title"></h1>
