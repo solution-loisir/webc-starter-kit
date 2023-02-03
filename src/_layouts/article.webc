@@ -1,0 +1,7 @@
+---
+layout: base.webc
+---
+<article>
+  <h1 @text="title"></h1>
+  <slot @raw="content"></slot>
+</article>

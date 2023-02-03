@@ -15,7 +15,9 @@ module.exports = function(config) {
   config.addPlugin(EleventyRenderPlugin);
   config.addPlugin(pluginRss);
   config.addPlugin(syntaxHighlight);
-  config.addPlugin(pluginWebc);
+  config.addPlugin(pluginWebc, {
+    components: "src/_components/**/*.webc"
+  });
   // Markdown
   config.setLibrary("md", markdownIt ({
     html: true,
@@ -60,14 +62,21 @@ module.exports = function(config) {
       });
     }
   }));
-
+  // Collections
+  config.addCollection("posts", (collection) => {
+    const posts = collection.getFilteredByGlob("./src/posts/*.md");
+    return posts.reverse();
+  });
+  // Config object
   return {
     dir: {
-        input: "src",
-        output: "_site"
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+      layouts: "_layouts",
+      data: "_data"
     },
     pathPrefix: "/",
-    dataTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     templateFormats: ["njk", "liquid", "html", "md", "11ty.js"]

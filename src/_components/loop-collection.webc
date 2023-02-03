@@ -1,0 +1,3 @@
+<script webc:type="js" webc:is="template">
+  collections[collection].map((page) => `<p>${page.data.description}</p>`).join("");
+</script>

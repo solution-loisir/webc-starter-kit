@@ -1,0 +1,9 @@
+---
+eleventyExcludeFromCollections: true
+dynamicPermalink: false
+permalink: robots.txt
+---
+<script webc:type="js" webc:is="template">
+  const path = require("path");
+  `Sitemap: ${path.join(meta.url, "sitemap.xml")}`;
+</script>
