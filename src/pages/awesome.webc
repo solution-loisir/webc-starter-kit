@@ -1,6 +1,7 @@
 ---
-title: Awesome
-description: The Awesome list.
-lang: en
+title: "Awesome"
+description: "The Awesome list."
+lang: "en"
+permalink: "`/${page.fileSlug}/`"
 ---
 <h1>About</h1>

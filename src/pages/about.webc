@@ -1,6 +1,7 @@
 ---
-title: About
-description: This page explains what WebC is all about!
-lang: en
+title: "About"
+description: "This page explains what WebC is all about!"
+lang: "en"
+permalink: "`/${page.fileSlug}/`"
 ---
 <h1>About</h1>
