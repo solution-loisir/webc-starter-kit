@@ -18,6 +18,7 @@ module.exports = function(config) {
   config.addPlugin(pluginWebc, {
     components: "src/_components/**/*.webc"
   });
+
   // Markdown
   config.setLibrary("md", markdownIt ({
     html: true,
@@ -62,11 +63,14 @@ module.exports = function(config) {
       });
     }
   }));
+
   // Collections
   config.addCollection("posts", (collection) => {
     const posts = collection.getFilteredByGlob("./src/posts/*.md");
     return posts.reverse();
   });
+  config.addCollection("pages", (collection) => collection.getFilteredByGlob("./src/pages/*.webc"));
+
   // Config object
   return {
     dir: {
@@ -80,5 +84,5 @@ module.exports = function(config) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     templateFormats: ["njk", "liquid", "html", "md", "11ty.js"]
-  }
+  };
 };
