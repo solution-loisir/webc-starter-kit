@@ -11,6 +11,9 @@ const markdownItEleventyImg = require("markdown-it-eleventy-img");
 const uslugify = require("uslug");
 
 module.exports = function(config) {
+  // Pass through copies
+  //config.addPassthroughCopy({ "assets/images": "images" });
+
   // Plugins
   config.addPlugin(EleventyRenderPlugin);
   config.addPlugin(pluginRss);
@@ -56,6 +59,8 @@ module.exports = function(config) {
       const [ src, attrs ] = attributes;
     
       Image(src, options);
+
+      console.log("[markdown-it-eleventy-img] Writing _site/images/* from ./assets/images/*");
     
       const metadata = Image.statsSync(src, options);
       return Image.generateHTML(metadata, attrs, {

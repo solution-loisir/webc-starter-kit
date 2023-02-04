@@ -6,3 +6,4 @@ dynamicPermalink: false
 permalink: "/"
 ---
 <loop-collection collection="all"></loop-collection>
+<a href="/posts/war-in-the-world/">War in the world</a>

@@ -5,3 +5,4 @@ lang: en
 published: true
 ---
 There is war in this world. Maybe, some day, it will end.
+![A television on a small table with a retro wallpaper background.](./assets/images/TV.jpg)
