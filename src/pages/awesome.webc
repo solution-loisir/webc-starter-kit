@@ -4,4 +4,4 @@ description: "The Awesome list."
 lang: "en"
 permalink: "`/${page.fileSlug}/`"
 ---
-<h1>About</h1>
+<h1>Awesome</h1>
