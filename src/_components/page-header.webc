@@ -1,4 +1,4 @@
-<header class="page-header">
+<header :class="headerClass">
   <figure></figure>
-  <main-nav></main-nav>
+  <main-nav nav-class="flex-nav"></main-nav>
 </header>

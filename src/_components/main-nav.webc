@@ -1,4 +1,4 @@
-<nav class="flex-nav">
+<nav :class="navClass">
   <ul role="list">
     <script webc:type="js" webc:is="template">
       collections.pages.map((item) => `<li><a href="${item.page.url}"${item.page.url === page.url ? ` class="nav-active-link"` : ""}>${item.data.title}</a></li>`).join("");

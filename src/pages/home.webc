@@ -5,4 +5,4 @@ lang: "en"
 dynamicPermalink: false
 permalink: "/"
 ---
-<page-header></page-header>
+<page-header header-class="page-header"></page-header>
