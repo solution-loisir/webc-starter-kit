@@ -26,5 +26,8 @@ lang: en
     <script defer nomodule src="/js/legacy.js"></script>
     -->
   </head>
-  <body @raw="content"></body>
+  <body>
+    <page-header header-class="page-header"></page-header>
+    <div @raw="content" webc:nokeep></div>
+  </body>
 </html>
