@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --serve",
+    "dev": "npx netlify dev",
     "clean": "rm -rf _site",
     "build": "npx @11ty/eleventy"
   },
@@ -25,6 +25,7 @@
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-eleventy-img": "^0.10.0",
     "markdown-it-toc-done-right": "^4.2.0",
+    "netlify-cli": "^12.12.0",
     "uslug": "^1.0.4"
   },
   "repository": {
