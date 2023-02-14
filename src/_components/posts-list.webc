@@ -1,9 +1,11 @@
 <script webc:type="js" webc:is="template">
-  const postListMarkup = collections[collection].map((post) => `<div>
-    <p><big>${post.data.title}</big></p>
-    <p>${post.data.description}</p>
-    <a href="${post.url}">Read post</a>
+  const postListMarkup = collections[collection].map((post) => 
+    `<div>
+      <p><big>${post.data.title}</big></p>
+      <p>${post.data.description}</p>
+      <a href="${post.url}">Read post</a>
     </div>`
   );
-  limit ? postListMarkup.slice(0, limit) : postListMarkup;
+
+  limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
 </script>
