@@ -6,4 +6,4 @@ dynamicPermalink: false
 permalink: "/"
 ---
 <h1>Home</h1>
-<posts-list collection="posts"></posts-list>
+<posts-list collection="posts" limit="6"></posts-list>
