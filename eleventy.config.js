@@ -4,6 +4,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const markdown = require("./config/markdown");
 const collections = require("./config/collections");
+const filters = require("./config/filters");
 
 module.exports = function(config) {
   config.addPlugin(EleventyRenderPlugin);
@@ -14,6 +15,7 @@ module.exports = function(config) {
   });
   config.addPlugin(markdown);
   config.addPlugin(collections);
+  config.addPlugin(filters);
 
   return {
     dir: {
