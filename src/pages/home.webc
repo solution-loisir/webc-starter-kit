@@ -7,4 +7,4 @@ permalink: "/"
 ---
 <h1>Home</h1>
 <posts-list collection="posts" limit="6"></posts-list>
-<copy-right first-in-production="2023-05-25" org-name="Mathieu Huot"></copy-right>
+<copy-right first-in-production="2023-05-25" org-name="My Name"></copy-right>
