@@ -1,0 +1,1 @@
+<p>&copy; <span webc:nokeep @html="copyrightYear(firstInProduction)"></span> <span webc:nokeep @text="orgName"></span></p>
