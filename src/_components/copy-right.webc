@@ -2,8 +2,11 @@
 
 <div @html="number('3') - 2"></div>
 
-<lo-op webc:nokeep @html="loop(collections.all, (item) => `
-  <p>${item.data.title}</p>
-  <div>${item.data.description}</div>`
+<ul @html="loop(collections.all, (item) => `
+  <li>${item.data.title}</li>
+  <ul>
+    <li>${item.data.description}</li>
+    <li><a href='${item.page.url}'>${item.page.fileSlug}</a></li>
+  </ul>`
 )">
-</lo-op>
+</ul>
