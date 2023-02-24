@@ -6,6 +6,7 @@ const markdown = require("./config/markdown");
 const collections = require("./config/collections");
 const filters = require("./config/filters");
 const transforms = require("./config/transforms");
+const formats = require("./config/formats");
 
 module.exports = function(config) {
   config.addPlugin(EleventyRenderPlugin);
@@ -18,6 +19,7 @@ module.exports = function(config) {
   config.addPlugin(collections);
   config.addPlugin(filters);
   config.addPlugin(transforms);
+  config.addPlugin(formats);
 
   return {
     dir: {

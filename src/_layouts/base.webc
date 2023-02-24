@@ -18,8 +18,8 @@ lang: en
     <link rel="apple-touch-icon" href="/images/favicon/favicon_192.png">
     -->
     <script webc:raw>document.documentElement.classList.remove("no-js");</script>
+    <link rel="stylesheet" type="text/css" href="/assets/style/index.css" webc:raw>
     <!--
-    <link rel="stylesheet" type="text/css" href="/style/index.css">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link rel="canonical" :href="canonical">
     <script type="module" src="/js/index.js"></script>
