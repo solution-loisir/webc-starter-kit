@@ -5,6 +5,7 @@ module.exports = {
   feedUrl() {
     return path.join(this.url, "feed.xml");
   },
+  isProduction: process.env.PRODUCTION,
   title: "WebC starter kit",
   subtitle: "A kit to start with WebC!",
   author: {

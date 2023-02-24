@@ -8,7 +8,7 @@
     "dev": "npx netlify dev",
     "clean": "rm -rf _site",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-    "build": "npx @11ty/eleventy"
+    "build": "PRODUCTION=true npx @11ty/eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
