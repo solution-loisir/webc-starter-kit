@@ -1,5 +1,6 @@
 <script webc:type="js" webc:is="template">
-  const postListMarkup = collections[collection].map((post) => 
+  // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
+  const postListMarkup = collections[tag].map((post) => 
     `<div>
       <p><big>${post.data.title}</big></p>
       <p>${post.data.description}</p>

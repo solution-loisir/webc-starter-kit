@@ -6,5 +6,5 @@ dynamicPermalink: false
 permalink: "/"
 ---
 <h1>Home</h1>
-<posts-list collection="posts" limit="6"></posts-list>
-<copy-right first-in-production="2023-05-25" org-name="My Name"></copy-right>
+<posts-list tag="posts" limit="6"></posts-list>
+<copy-right first-in-production="2022-05-25" org-name="My Name"></copy-right>
