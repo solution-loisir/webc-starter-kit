@@ -8,7 +8,10 @@ module.exports = function(config) {
       if(path !== "./src/assets/style/index.css") return;
       let { code, map } = (await import("lightningcss")).bundle({
         filename: path,
-        minify: isProduction ? true : false
+        minify: isProduction ? true : false,
+        drafts: {
+          nesting: true
+        }
       });
 
       return (data) => code;
