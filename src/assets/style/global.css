@@ -1,0 +1,49 @@
+:root {
+  font-size: clamp(1.08rem, 0.4615384615vw + 0.9138461538rem, 1.2rem);
+  --color-primary: #0052cc;
+  --color-accent: #FD5A62;
+  --color-dark: #000204;
+  --color-light: #f9fbff;
+  --color-gray: #d3d8de;
+  --color-white: #fff;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  padding-bottom: clamp(1.7rem, 8%, 2rem);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+main {
+  display: block;
+}
+
+a {
+  display: inline-block;
+}
+
+ul[role=list] a {
+  color: inherit;
+  text-decoration: none;
+}

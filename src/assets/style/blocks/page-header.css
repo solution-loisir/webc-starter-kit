@@ -1,0 +1,10 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  padding-block: clamp(1rem, 5%, 1.2rem);
+  padding-inline: clamp(1.2rem, 7%, 1.7rem);
+  box-shadow: 3px 3px 10px -3px #d3d8de;
+}
