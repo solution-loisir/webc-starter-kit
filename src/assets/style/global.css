@@ -1,6 +1,6 @@
 :root {
   font-size: clamp(1.08rem, 0.4615384615vw + 0.9138461538rem, 1.2rem);
-  --color-primary: #0052cc;
+  --color-primary: hwb(216 0% 20%);
   --color-accent: #FD5A62;
   --color-dark: #000204;
   --color-light: #f9fbff;

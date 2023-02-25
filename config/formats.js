@@ -1,4 +1,5 @@
 const { isProduction } = require("../src/_data/meta");
+const browserslist = require("browserslist");
 
 module.exports = function(config) {
   config.addTemplateFormats("css");
@@ -9,6 +10,7 @@ module.exports = function(config) {
       let { code, map } = (await import("lightningcss")).bundle({
         filename: path,
         minify: isProduction ? true : false,
+        targets: (await import("lightningcss")).browserslistToTargets(browserslist("defaults")),
         drafts: {
           nesting: true
         }
