@@ -1,25 +1,15 @@
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const markdown = require("./config/markdown");
-const collections = require("./config/collections");
-const filters = require("./config/filters");
-const transforms = require("./config/transforms");
-const formats = require("./config/formats");
-
 module.exports = function(config) {
-  config.addPlugin(EleventyRenderPlugin);
-  config.addPlugin(pluginRss);
-  config.addPlugin(syntaxHighlight);
-  config.addPlugin(pluginWebc, {
+  config.addPlugin(require("@11ty/eleventy").EleventyRenderPlugin);
+  config.addPlugin(require("@11ty/eleventy-plugin-rss"));
+  config.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
+  config.addPlugin(require("@11ty/eleventy-plugin-webc"), {
     components: "src/_components/**/*.webc"
   });
-  config.addPlugin(markdown);
-  config.addPlugin(collections);
-  config.addPlugin(filters);
-  config.addPlugin(transforms);
-  config.addPlugin(formats);
+  config.addPlugin(require("./config/markdown"));
+  config.addPlugin(require("./config/collections"));
+  config.addPlugin(require("./config/filters"));
+  config.addPlugin(require("./config/transforms"));
+  config.addPlugin(require("./config/cssFormat"));
 
   return {
     dir: {
