@@ -10,6 +10,9 @@
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "build": "PRODUCTION=true npx @11ty/eleventy"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-fetch": "^3.0.0",
