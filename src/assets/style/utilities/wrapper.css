@@ -1,6 +1,6 @@
 .wrapper {
   margin-inline: auto;
-  width: min(65ch, var(--min-width, 94vw));
-  padding-block: clamp(1rem, 5%, 1.2rem);
-  padding-inline: clamp(1.2rem, 7%, 1.7rem);
+  width: var(--width-md);
+  padding-block: var(--padding-sm);
+  padding-inline: var(--padding-md);
 }

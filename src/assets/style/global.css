@@ -1,31 +1,52 @@
 :root {
-  font-size: clamp(1.08rem, 0.4615384615vw + 0.9138461538rem, 1.2rem);
+  /* font-size: clamp(1.08rem, 0.4615384615vw + 0.9138461538rem, 1.2rem);*/
+  /* Colors */
   --color-primary: hwb(216 0% 20%);
-  --color-accent: #FD5A62;
-  --color-dark: #000204;
-  --color-light: #f9fbff;
-  --color-gray: #d3d8de;
+  --color-accent: hwb(357 35% 1%);
+  --color-dark: hwb(216 0% 98%);
+  --color-light: hwb(216 98% 0%);
+  --color-gray: hwb(216 83% 13%);
   --color-white: #fff;
+  /* Sizes */
+  --size-fluid-base: clamp(1.125rem, 0.3409vw + 1.0398rem, 1.3125rem); 
+  --size-300: 0.8rem;
+  --size-400: 1rem;
+  --size-500: 1.2rem;
+  --size-600: 1.4rem;
+  --size-700: 1.7rem;
+  --size-800: 2rem;
+  --size-900: 2.4rem;
+  /* Padding */
+  --padding-sm: clamp(var(--size-400), 5%, var(--size-500));
+  --padding-md: clamp(var(--size-500), 7%, var(--size-600));
+  --padding-lg: clamp(var(--size-600), 8%, var(--size-700));
+  /* Measures */
+  --width-md: min(65ch, var(--min-width, 94vw));
+  --width-lg: min(80ch, var(--min-width, 94vw));
+}
+
+html {
+  font-size: var(--size-fluid-base);
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--color-dark);
   background-color: var(--color-light);
-  padding-bottom: clamp(1.7rem, 8%, 2rem);
+  padding-bottom: var(--padding-lg);
   overflow-x: hidden;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var(--size-800);
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: var(--size-700);
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: var(--size-600);
 }
 
 h1,
