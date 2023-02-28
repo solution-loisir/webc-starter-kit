@@ -1,5 +1,4 @@
 :root {
-  /* font-size: clamp(1.08rem, 0.4615384615vw + 0.9138461538rem, 1.2rem);*/
   /* Colors */
   --color-primary: hwb(216 0% 20%);
   --color-accent: hwb(357 35% 1%);
