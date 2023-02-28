@@ -2,8 +2,8 @@ const path = require("path");
 
 module.exports = {
   url: process.env.URL || "http://localhost:8080",
-  feedUrl() {
-    return path.join(this.url, "feed.xml");
+  canonical(pathBase) {
+    return path.join(this.url, pathBase);
   },
   isProduction: Boolean(process.env.PRODUCTION),
   title: "WebC starter kit",
