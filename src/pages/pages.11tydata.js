@@ -1,3 +1,3 @@
 module.exports = {
-  layout: "base.webc"
+  layout: "page.webc"
 };
