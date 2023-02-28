@@ -22,6 +22,9 @@
   /* Measures */
   --width-md: min(65ch, var(--min-width, 94vw));
   --width-lg: min(80ch, var(--min-width, 94vw));
+  /* Flow */
+  --space: max(4vh, var(--size-500));
+  --space-md: max(6vh, var(--size-700));
 }
 
 html {
