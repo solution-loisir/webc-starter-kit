@@ -1,0 +1,29 @@
+---
+eleventyExcludeFromCollections: true
+dynamicPermalink: false
+permalink: manifest.json
+---
+<script webc:type="js" webc:is="template">
+  `{
+  "short_name": "${meta.title}",
+    "name": "${meta.title + '. ' + meta.subtitle}",
+    "description": "${meta.description}",
+    "icons": [
+      {
+        "src": "${meta.favicon.png192}",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "${meta.favicon.png512}",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "${meta.url}",
+    "background_color": "${meta.color.background}",
+    "display": "${meta.display}",
+    "scope": "${meta.url}",
+    "theme_color": "${meta.color.theme}"
+    }`;
+</script>
