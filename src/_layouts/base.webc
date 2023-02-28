@@ -17,7 +17,7 @@ og:
     <script webc:type="js" webc:is="title">
       `<title>${meta.title}${title ? ` | ${title}` : ""}</title>`;
     </script>
-    <meta name="description" :content="description">
+    <meta name="description" :content="description || meta.description">
     <!--
     <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16 32x32 48x48 256x256">
     <link rel="icon" type="image/png" href="/images/favicon/favicon_192.png" sizes="192x192">
@@ -33,11 +33,11 @@ og:
     <link rel="alternate" type="application/atom+xml" :title="meta.title" :href="meta.canonical('feed.xml')">
     <link rel="canonical" :href="meta.canonical(page.url)">
     <meta property="og:type" :content="ogtype">
-    <meta property="og:title" :content="title">
+    <meta property="og:title" :content="meta.title + (title ? ' | ' + title : '')">
     <meta property="og:url" :content="meta.canonical(page.url)">
     <meta property="og:image" :content="ogimage">
-    <meta property="og:description" :content="description">
-    <meta property="og:locale" :content="lang">
+    <meta property="og:description" :content="description || meta.description">
+    <meta property="og:locale" :content="lang || 'en'">
     <meta @html="og.join('\n')" webc:nokeep></meta>
   </head>
   <body>
