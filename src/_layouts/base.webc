@@ -1,6 +1,13 @@
 ---
 description: A starter project for Eleventy (11ty) using WebC as a main template langage. Also includes opiniated assets processing and a few more bells and whistles.
 lang: en
+ogtype: website
+ogimage: ""
+og:
+  - '<meta property="og:site_name" content="Webc Starter Kit">'
+  - '<meta property="og:image:width" content="">'
+  - '<meta property="og:image:height" content="">'
+  - '<meta property="og:image:alt" content="">'
 ---
 <!DOCTYPE html>
 <html :lang="lang" id="page-top" class="no-js">
@@ -11,20 +18,27 @@ lang: en
       `<title>${meta.title}${title ? ` | ${title}` : ""}</title>`;
     </script>
     <meta name="description" :content="description">
-    <link rel="alternate" type="application/atom+xml" :title="meta.title" :href="meta.feedUrl()">
     <!--
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" sizes="16x16 32x32 48x48 256x256">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16 32x32 48x48 256x256">
     <link rel="icon" type="image/png" href="/images/favicon/favicon_192.png" sizes="192x192">
     <link rel="apple-touch-icon" href="/images/favicon/favicon_192.png">
+    <script type="module" src="/js/index.js"></script>
+    <script defer nomodule src="/js/legacy.js"></script>
     -->
     <script webc:raw>document.documentElement.classList.remove("no-js");</script>
     <link rel="stylesheet" type="text/css" href="/assets/style/index.css" webc:raw>
     <!--
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="canonical" :href="canonical">
-    <script type="module" src="/js/index.js"></script>
-    <script defer nomodule src="/js/legacy.js"></script>
     -->
+    <link rel="alternate" type="application/atom+xml" :title="meta.title" :href="meta.canonical('feed.xml')">
+    <link rel="canonical" :href="meta.canonical(page.url)">
+    <meta property="og:type" :content="ogtype">
+    <meta property="og:title" :content="title">
+    <meta property="og:url" :content="meta.canonical(page.url)">
+    <meta property="og:image" :content="ogimage">
+    <meta property="og:description" :content="description">
+    <meta property="og:locale" :content="lang">
+    <meta @html="og.join('\n')" webc:nokeep></meta>
   </head>
   <body>
     <page-header header-class="page-header"></page-header>
