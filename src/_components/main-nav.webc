@@ -1,6 +1,6 @@
 <nav :class="navClass">
   <ul role="list">
-    <script webc:type="js" webc:is="template">
+    <script webc:type="js">
       collections.pages.map((item) => `<li><a href="${item.page.url}"${item.page.url === page.url ? ` aria-current="page"` : ""}>${item.data.title}</a></li>`).join("\n");
     </script>
   </ul>
