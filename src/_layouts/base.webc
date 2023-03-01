@@ -16,7 +16,7 @@ ogmeta:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script webc:type="js" webc:is="title">
+    <script webc:type="js" webc:is="title" webc:raw>
       `<title>${meta.title}${title ? ` | ${title}` : ""}</title>`;
     </script>
     <meta name="description" :content="description || meta.description">
@@ -44,7 +44,7 @@ ogmeta:
     <meta property="og:description" :content="description || meta.description">
     <meta property="og:locale" :content="lang || 'en'">
     <meta property="og:site_name" :content="meta.title">
-    <script webc:if="ogmeta" webc:type="js" webc:is="meta" webc:nokeep>
+    <script webc:if="ogmeta" webc:type="js" webc:is="meta" webc:nokeep webc:raw>
       ogmeta.map((obj) => `<meta property="${obj.property}" content="${obj.content}">`).join("\n");
     </script>
   </head>
