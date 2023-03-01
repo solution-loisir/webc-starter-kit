@@ -1,3 +1,5 @@
+/** @param {import("@11ty/eleventy").UserConfig} config */
+
 module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy").EleventyRenderPlugin);
   config.addPlugin(require("@11ty/eleventy-plugin-rss"));
@@ -11,6 +13,8 @@ module.exports = function(config) {
   config.addPlugin(require("./config/transforms"));
   config.addPlugin(require("./config/cssFormat"));
 
+  config.ignores.add("src/_components/**/*.webc");
+
   return {
     dir: {
       input: "src",
@@ -20,8 +24,8 @@ module.exports = function(config) {
       data: "_data"
     },
     pathPrefix: "/",
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
-    templateFormats: ["njk", "liquid", "html", "md", "11ty.js"]
+    htmlTemplateEngine: "webc",
+    markdownTemplateEngine: "webc",
+    templateFormats: ["njk", "liquid", "html", "md", "11ty.js", "webc"]
   };
 };
