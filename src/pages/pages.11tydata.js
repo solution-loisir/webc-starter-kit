@@ -1,3 +1,4 @@
 module.exports = {
-  layout: "page.webc"
+  layout: "page.webc",
+  permalink: (data) => `/${data.page.fileSlug}/`
 };
