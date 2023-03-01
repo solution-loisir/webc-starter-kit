@@ -1,4 +1,4 @@
-<script webc:type="js" webc:is="template">
+<script webc:type="js" webc:root="override">
   const initialYear = this.firstInProduction ? new Date(this.firstInProduction).getFullYear() : new Date().getFullYear();
   const currentYear = new Date().getFullYear();
   const yearStatement = (currentYear - initialYear) > 0 ? `${initialYear}-${currentYear}` : initialYear;
