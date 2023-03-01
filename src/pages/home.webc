@@ -4,5 +4,7 @@ description: "The home page of WebC starter kit a starter project for Eleventy (
 lang: "en"
 dynamicPermalink: false
 permalink: "/"
+navigation:
+  order: 1
 ---
 <posts-list tag="posts" limit="6"></posts-list>

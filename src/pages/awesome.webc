@@ -2,5 +2,6 @@
 title: "Awesome"
 description: "The Awesome list."
 lang: "en"
-permalink: "`/${page.fileSlug}/`"
+navigation:
+  order: 2
 ---

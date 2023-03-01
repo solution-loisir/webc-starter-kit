@@ -19,12 +19,15 @@
   --padding-sm: clamp(var(--size-400), 5%, var(--size-500));
   --padding-md: clamp(var(--size-500), 7%, var(--size-600));
   --padding-lg: clamp(var(--size-600), 8%, var(--size-700));
+  --padding-xl: clamp(var(--size-800), 10%, var(--size-900));
   /* Measures */
   --width-md: min(65ch, var(--min-width, 94vw));
   --width-lg: min(80ch, var(--min-width, 94vw));
   /* Flow */
   --space: max(4vh, var(--size-500));
-  --space-md: max(6vh, var(--size-700));
+  --space-md: max(6vh, var(--size-600));
+  --space-lg: max(8vh, var(--size-700));
+  --space-xl: max(10vh, var(--size-800));
 }
 
 html {
@@ -35,7 +38,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--color-dark);
   background-color: var(--color-light);
-  padding-bottom: var(--padding-lg);
   overflow-x: hidden;
 }
 
@@ -60,6 +62,7 @@ h3 {
 
 main {
   display: block;
+  margin-bottom: var(--space-md);
 }
 
 a {

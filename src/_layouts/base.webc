@@ -50,7 +50,7 @@ ogmeta:
   </head>
   <body>
     <page-header header-class="page-header"></page-header>
-    <div @raw="content" webc:nokeep></div>
+    <div @html="content" webc:nokeep></div>
     <page-footer></page-footer>
   </body>
 </html>
