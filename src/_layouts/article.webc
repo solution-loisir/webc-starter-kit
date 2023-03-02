@@ -1,7 +1,9 @@
 ---
 layout: base.webc
 ---
-<article>
-  <h1 @text="title"></h1>
-  <slot @html="content"></slot>
-</article>
+<main>
+  <article class="wrapper">
+    <h1 @text="title"></h1>
+    <slot @html="content"></slot>
+  </article>
+</main>
