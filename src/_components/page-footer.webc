@@ -1,3 +1,5 @@
-<footer>
-  <copy-right first-in-production="2022-05-25" org-name="My Name"></copy-right>
+<footer class="page-footer">
+  <div class="wrapper">
+    <copy-right first-in-production="2022-05-25" org-name="My Name"></copy-right>
+  </div>
 </footer>
