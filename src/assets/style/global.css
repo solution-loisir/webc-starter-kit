@@ -28,6 +28,10 @@
   --space-md: max(6vh, var(--size-600));
   --space-lg: max(8vh, var(--size-700));
   --space-xl: max(10vh, var(--size-800));
+  /* Border radius */
+  --radius: 5px;
+  --radius-pill: 1em;
+  --radius-round: 50%;
 }
 
 html {
@@ -38,6 +42,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--color-dark);
   background-color: var(--color-light);
+  padding-bottom: var(--size-900);
   overflow-x: hidden;
 }
 
@@ -69,7 +74,11 @@ a {
   display: inline-block;
 }
 
-ul[role=list] a {
+nav a {
   color: inherit;
   text-decoration: none;
+}
+
+big {
+  font-size: var(--size-500);
 }

@@ -5,4 +5,6 @@ lang: en
 published: false
 series: political thinking!
 ---
+<series-listing name="political thinking!"></series-listing>
+
 Lets be friends.
