@@ -1,14 +1,13 @@
 ---
 description: A starter project for Eleventy (11ty) using WebC as a main template langage. Also includes opiniated assets processing and a few more bells and whistles.
 lang: en
-ogtype: website
-ogimage: ""
-ogmeta:
-  - property: "og:image:width"
-    content: ""
-  - property: "og:image:height"
-    content: ""
-  - property: "og:image:alt"
+og_type: website
+og_image: ""
+og_image_alt: ""
+og_image_width: "1200"
+og_image_height: "600"
+og_meta:
+  - property: ""
     content: ""
 ---
 <!DOCTYPE html>
@@ -35,15 +34,25 @@ ogmeta:
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" :content="meta.author.twitter">
     <meta name="twitter:creator" :content="meta.author.twitter">
-    <meta property="og:type" :content="ogtype">
+    <meta property="og:type" :content="og_type">
     <meta property="og:title" :content="meta.title + (title ? ' | ' + title : '')">
     <meta property="og:url" :content="meta.canonical(page.url)">
-    <meta property="og:image" :content="ogimage">
+    <meta property="og:image" :content="og_image">
+    <meta property="og:image:secure_url" :content="og_image">
+    <meta property="og:image:alt" :content="og_image_alt">
+    <meta property="og:image:width" :content="og_image_width">
+    <meta property="og:image:height" :content="og_image_height">
     <meta property="og:description" :content="description || meta.description">
     <meta property="og:locale" :content="lang || 'en'">
     <meta property="og:site_name" :content="meta.title">
-    <script webc:if="ogmeta" webc:type="js" webc:is="meta" webc:nokeep webc:raw>
-      ogmeta.map((obj) => `<meta property="${obj.property}" content="${obj.content}">`).join("\n");
+    <script webc:if="og_meta" webc:type="js" webc:is="meta" webc:nokeep webc:raw>
+      og_meta.map((obj) => {
+        if(!obj.property && !obj.content) {
+          "";
+        } else {
+          `<meta property="${obj.property}" content="${obj.content}">`;
+        }
+      }).join("\n");
     </script>
   </head>
   <body>
