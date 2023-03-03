@@ -6,4 +6,11 @@ published: true
 series: political thinking!
 ---
 There is war in this world. Maybe, some day, it will end.
+
+<syntax-highlight language="js">
+function test() {
+  return true;
+}
+</syntax-highlight>
+
 ![A television on a small table with a retro wallpaper background.](./src/assets/images/TV.jpg)

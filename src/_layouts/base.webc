@@ -29,9 +29,7 @@ ogmeta:
     -->
     <script webc:raw>document.documentElement.classList.remove("no-js");</script>
     <link rel="stylesheet" type="text/css" href="/assets/style/index.css" webc:raw>
-    <!--
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    -->
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" webc:raw>
     <link rel="alternate" type="application/atom+xml" :title="meta.title" :href="meta.canonical('feed.xml')">
     <link rel="canonical" :href="meta.canonical(page.url)">
     <meta name="twitter:card" content="summary_large_image">
