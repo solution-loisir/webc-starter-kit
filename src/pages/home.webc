@@ -7,4 +7,4 @@ permalink: "/"
 navigation:
   order: 1
 ---
-<posts-list tag="posts" limit="6"></posts-list>
+<posts-list :data-source="collections.posts" limit="6"></posts-list>

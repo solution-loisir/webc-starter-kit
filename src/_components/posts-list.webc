@@ -1,7 +1,7 @@
 <div class="flow">
   <script webc:type="js">
     // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
-    const postListMarkup = collections[tag].map((post) => 
+    const postListMarkup = dataSource.map((post) => 
       `<div>
         <p><big>${post.data.title}</big></p>
         <p>${post.data.description}</p>

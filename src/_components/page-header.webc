@@ -1,4 +1,4 @@
 <header :class="headerClass">
   <figure></figure>
-  <main-nav :source="collections.pages" nav-class="flex-nav"></main-nav>
+  <main-nav :data-source="collections.pages" nav-class="flex-nav"></main-nav>
 </header>
