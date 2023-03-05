@@ -28,7 +28,7 @@ module.exports = function(config) {
   .use(markdownItAttrs)
   .use(markdownItEleventyImg, {
     imgOptions: {
-      widths: [600, 300],
+      widths: [600, 450, 300],
       urlPath: "/images/",
       outputDir: path.join("_site", "images"),
       formats: ["avif", "webp", "jpeg"]
@@ -36,7 +36,7 @@ module.exports = function(config) {
     globalAttributes: {
       class: "image markdown-image",
       decoding: "async",
-      sizes: "(max-width: 48rem) 300px, (min-width: 48rem) 600px"
+      sizes: "(max-width: 48rem) 300px, (max-width: 62rem) 450px, 600px"
     },
     renderImage(image, attributes) {
       const [ Image, options ] = image;
