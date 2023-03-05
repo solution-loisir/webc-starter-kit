@@ -1,3 +1,12 @@
+/*
+Breakpoints
+xs: 25rem -> ~400px
+sm: 36rem -> ~576px
+md: 48rem -> ~768px
+lg: 62rem -> ~992px
+xl: 80rem -> ~1280px
+*/
+
 :root {
   /* Colors */
   --color-primary: hwb(216 0% 20%);
