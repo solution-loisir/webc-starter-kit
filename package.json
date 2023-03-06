@@ -27,7 +27,7 @@
     "html-minifier-terser": "^7.1.0",
     "lightningcss": "^1.19.0",
     "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.6",
+    "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-eleventy-img": "^0.10.0",
     "markdown-it-toc-done-right": "^4.2.0",
