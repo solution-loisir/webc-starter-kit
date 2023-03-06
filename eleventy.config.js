@@ -13,8 +13,6 @@ module.exports = function(config) {
   config.addPlugin(require("./config/transforms"));
   config.addPlugin(require("./config/cssFormat"));
 
-  config.ignores.add("src/_components/**/*.webc");
-
   return {
     dir: {
       input: "src",
