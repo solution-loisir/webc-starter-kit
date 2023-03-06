@@ -3,5 +3,5 @@ layout: base.webc
 ---
 <main class="wrapper">
   <h1 @text="title"></h1>
-  <div @html="content" webc:nokeep></div>
+  <slot @html="content"></slot>
 </main>

@@ -57,7 +57,7 @@ og_meta:
   </head>
   <body>
     <page-header header-class="page-header"></page-header>
-    <div @html="content" webc:nokeep></div>
+    <slot @html="content" webc:nokeep></slot>
     <page-footer></page-footer>
   </body>
 </html>
