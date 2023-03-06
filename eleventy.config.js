@@ -5,7 +5,10 @@ module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy-plugin-rss"));
   config.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
   config.addPlugin(require("@11ty/eleventy-plugin-webc"), {
-    components: "src/_components/**/*.webc"
+    components: [
+      "src/_components/**/*.webc",
+      "./node_modules/@11ty/eleventy-plugin-syntaxhighlight/syntax-highlight.webc"
+    ]
   });
   config.addPlugin(require("./config/markdown"));
   config.addPlugin(require("./config/collections"));
