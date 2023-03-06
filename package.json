@@ -19,7 +19,7 @@
     "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "@11ty/eleventy-plugin-webc": "^0.9.1",
+    "@11ty/eleventy-plugin-webc": "^0.9.3",
     "@11ty/is-land": "^3.0.0",
     "@toycode/markdown-it-class": "^1.2.4",
     "browserslist": "^4.21.5",
