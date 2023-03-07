@@ -6,5 +6,6 @@ dynamicPermalink: false
 permalink: "/"
 navigation:
   order: 1
+  label: Home
 ---
 <posts-list :data-source="collections.posts" limit="6"></posts-list>

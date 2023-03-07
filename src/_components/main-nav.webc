@@ -1,7 +1,7 @@
 <nav :class="navClass">
   <ul role="list">
     <script webc:type="js">
-      dataSource.map((item) => `<li><a href="${item.page.url}"${item.page.url === page.url ? ` aria-current="page"` : ""}>${item.data.title}</a></li>`).join("\n");
+      dataSource.map((item) => `<li><a href="${item.page.url}"${item.page.url === page.url ? ` aria-current="page"` : ""}>${item.data.navigation.label}</a></li>`).join("\n");
     </script>
   </ul>
 </nav>

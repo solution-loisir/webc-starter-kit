@@ -4,4 +4,5 @@ description: "This page explains what WebC is all about!"
 lang: "en"
 navigation:
   order: 3
+  label: About
 ---
