@@ -24,5 +24,14 @@ module.exports = {
   color: {
     theme: "#000",
     background: "#fff"
+  },
+  og: {
+    type: "website",
+    image: {
+      src: "",
+      alt: "",
+      width: "1200",
+      height: "600"
+    }
   }
 };

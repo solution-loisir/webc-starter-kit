@@ -4,6 +4,10 @@ description: This is an essay on war and the end of the world.
 lang: en
 published: true
 series: political thinking!
+og_image: ""
+og_image_alt: ""
+og_image_width: ""
+og_image_height: ""
 ---
 There is war in this world. Maybe, some day, it will end.
 
