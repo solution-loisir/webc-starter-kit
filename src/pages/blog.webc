@@ -1,0 +1,8 @@
+---
+title: "Blog"
+description: "The blog of Webc Starter Kit"
+lang: "en"
+navigation:
+  order: 3
+  label: Blog
+---
