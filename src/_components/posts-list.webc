@@ -11,4 +11,5 @@
   
     limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
   </script>
+  <a href="/blog/">View all posts</a>
 </div>

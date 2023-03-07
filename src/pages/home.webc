@@ -8,4 +8,4 @@ navigation:
   order: 1
   label: Home
 ---
-<posts-list :data-source="collections.posts" limit="6"></posts-list>
+<posts-list :data-source="collections.posts" limit="4"></posts-list>
