@@ -7,7 +7,7 @@ permalink: sitemap.xml
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <script webc:type="js" webc:is="template">
     const path = require("path");
-    collections.all.map((page) => {
+    collections.pages.map((page) => {
       if(typeof page.url === "string") return `<url>
     <loc>${path.join(meta.url, page.url)}</loc>
   </url>`
