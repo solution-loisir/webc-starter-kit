@@ -4,6 +4,6 @@ layout: base.webc
 <main>
   <article class="wrapper">
     <h1 @text="title"></h1>
-    <slot @html="content"></slot>
+    <slot @raw="content"></slot>
   </article>
 </main>

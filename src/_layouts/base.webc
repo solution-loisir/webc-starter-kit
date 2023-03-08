@@ -37,7 +37,7 @@
   </head>
   <body>
     <page-header header-class="page-header"></page-header>
-    <slot @html="content" webc:nokeep></slot>
+    <slot @raw="content" webc:nokeep></slot>
     <page-footer></page-footer>
   </body>
 </html>
