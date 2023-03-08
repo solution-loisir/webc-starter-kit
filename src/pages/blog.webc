@@ -4,5 +4,14 @@ description: "The blog of Webc Starter Kit"
 lang: "en"
 navigation:
   order: 3
-  label: Blog
+  label: "Blog"
+pagination:
+  data: collections.posts
+  size: 8
+  alias: posts
+  reverse: true
+permalink: "`/blog/${pagination.pageNumber}/`"
 ---
+<script webc:type="js" webc:root="override">
+ posts.map((post) => `<p>${post.data.title}</p>`);
+</script>
