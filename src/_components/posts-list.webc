@@ -1,12 +1,11 @@
-<script webc:type="js">
+<script webc:type="js" webc:root="override">
   // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
-  const postListMarkup = dataSource.map((post) => 
+  const postListMarkup = source.map((post) => 
     `<div>
       <p><big>${post.data.title}</big></p>
       <p>${post.data.description}</p>
       <a href="${post.url}">Read post</a>
     </div>`
   );
-
   limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
 </script>
