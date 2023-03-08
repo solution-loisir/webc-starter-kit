@@ -1,6 +1,7 @@
 ---
 title: Peace in the city
 description: This is an essay on peace and how to live toghether.
+date: 2023-03-08
 lang: en
 published: false
 series: political thinking!

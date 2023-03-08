@@ -1,6 +1,7 @@
 ---
 title: War in the world
 description: This is an essay on war and the end of the world.
+date: 2023-02-24
 lang: en
 published: true
 series: political thinking!
