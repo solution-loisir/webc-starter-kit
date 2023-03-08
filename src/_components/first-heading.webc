@@ -1,7 +1,7 @@
 <style webc:scoped>
   h1 {
-    margin-block-start: 2.4rem;
-    margin-block-end: 2.4rem;
+    margin-block-start: var(--size-900);
+    margin-block-end: var(--size-900);
   }
 </style>
 
