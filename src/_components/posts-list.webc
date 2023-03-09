@@ -5,11 +5,11 @@
       <p><big>${post.data.title}</big></p>
       <p>${post.data.description}</p>
       ${post.data.tags ? `<div>
-        ${post.data.tags && post.data.tags.map((tag, index) => {
+        ${Array.isArray(post.data.tags) ? post.data.tags.map((tag, index) => {
           if(index < 4) {
             return `<a>#${slugify(tag)}</a>`;
           }
-        }).join("\n")}  
+        }).join("\n") : post.data.tags}  
       </div>` : ""}
       <a href="${post.url}">Read post</a>
     </div>`
