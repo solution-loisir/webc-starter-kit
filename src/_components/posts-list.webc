@@ -4,6 +4,13 @@
     `<div>
       <p><big>${post.data.title}</big></p>
       <p>${post.data.description}</p>
+      ${post.data.tags ? `<div>
+        ${post.data.tags && post.data.tags.map((tag, index) => {
+          if(index < 4) {
+            return `<a>#${slugify(tag)}</a>`;
+          }
+        }).join("\n")}  
+      </div>` : ""}
       <a href="${post.url}">Read post</a>
     </div>`
   );

@@ -9,6 +9,7 @@ og_image: ""
 og_image_alt: ""
 og_image_width: ""
 og_image_height: ""
+tags:
 ---
 <series-listing name="political thinking!"></series-listing>
 
