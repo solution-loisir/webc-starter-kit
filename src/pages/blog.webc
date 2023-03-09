@@ -7,11 +7,7 @@ navigation:
   label: "Blog"
 pagination:
   data: collections.posts
-  size: 8
+  size: 2
   alias: posts
-  reverse: true
-permalink: "`/blog/${pagination.pageNumber}/`"
 ---
-<script webc:type="js" webc:root="override">
- posts.map((post) => `<p>${post.data.title}</p>`);
-</script>
+<posts-list :source="posts"></posts-list>
