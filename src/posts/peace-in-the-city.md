@@ -10,6 +10,9 @@ og_image_alt: ""
 og_image_width: ""
 og_image_height: ""
 tags:
+  - peace
+  - love
+  - care
 ---
 <series-listing name="political thinking!"></series-listing>
 
