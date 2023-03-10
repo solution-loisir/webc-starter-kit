@@ -19,4 +19,14 @@ module.exports = function(config) {
       return obj;
     }, {});
   });
+  config.addCollection("tags", (collection) => {
+    const posts = collection.getFilteredByGlob("./src/posts/*.md");
+    const tagSet = posts.reduce((set, template) => {
+      if(template.data.tags) {
+        template.data.tags.forEach((tag) => set.add(tag));
+      }
+      return set;
+    }, new Set());
+    return [...tagSet];
+  });
 };
