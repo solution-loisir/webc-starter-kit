@@ -14,6 +14,4 @@ tags:
   - love
   - care
 ---
-<series-listing name="political thinking!"></series-listing>
-
 Lets be friends.

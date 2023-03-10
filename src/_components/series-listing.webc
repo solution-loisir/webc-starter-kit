@@ -1,10 +1,10 @@
 <div class="series-listing">
   <p><big><span @text="name" webc:nokeep></span> series!</big></p>
-  <ul role="list">
+  <ol>
     <script webc:type="js">
       collections.series[name]
-        .map((series) => `<li><a href="${series.page.url}">${series.data.title}</a></li>`)
+        .map((series) => `<li><a href="${series.page.url}"${series.page.url === page.url ? ` aria-current="page"` : ""}>${series.data.title}</a></li>`)
         .join("\n");
     </script>
-  </ul>
+  </ol>
 </div>

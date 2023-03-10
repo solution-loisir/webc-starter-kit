@@ -4,6 +4,7 @@ layout: base.webc
 <main>
   <article class="wrapper">
     <first-heading :heading="title"></first-heading>
+    <series-listing :name="series" webc:if="series"></series-listing>
     <slot @raw="content"></slot>
   </article>
 </main>
