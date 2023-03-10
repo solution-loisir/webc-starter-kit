@@ -12,9 +12,11 @@ module.exports = {
   display: "fullscreen",
   author: {
     name: "My Name",
+    description: "A brief description of me as an author.",
     email: "my@email.com",
     twitter: "@twitterhandle",
-    mastodon: "myname@mastodon.com"
+    mastodon: "myname@mastodon.com",
+    github: "https://github.com/user-name"
   },
   favicon: {
     png192: "assets/images/favicon192.png",
