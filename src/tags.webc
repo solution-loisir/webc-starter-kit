@@ -1,0 +1,7 @@
+---
+layout: page.webc 
+pagination:
+  data: collections.tags
+  size: 1
+---
+<posts-list :source="collections[pagination.items[0]]"></posts-list>

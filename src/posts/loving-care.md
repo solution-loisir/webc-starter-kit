@@ -11,7 +11,7 @@ og_image_width: ""
 og_image_height: ""
 tags:
   - menta health
-  - Love
+  - love
   - care
   - society
   - the world

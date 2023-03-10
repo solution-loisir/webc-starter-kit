@@ -1,18 +1,21 @@
 <script webc:type="js" webc:root="override">
   // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
-  const postListMarkup = source.map((post) => 
-    `<div>
+  const postListMarkup = source.map((post) => {
+    let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
+
+    return `<div>
       <p><big>${post.data.title}</big></p>
       <p>${post.data.description}</p>
-      ${post.data.tags ? `<div>
-        ${Array.isArray(post.data.tags) ? post.data.tags.map((tag, index) => {
+      ${tags ? `<div>
+        ${tags.map((tag, index) => {
           if(index < 4) {
-            return `<a>#${slugify(tag)}</a>`;
+            return `<a href="/tags/${slugify(tag)}/">#${slugify(tag)}</a>`;
           }
-        }).join("\n") : post.data.tags}  
+        }).join("\n")}  
       </div>` : ""}
       <a href="${post.url}">Read post</a>
     </div>`
-  );
+  });
+  
   limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
 </script>
