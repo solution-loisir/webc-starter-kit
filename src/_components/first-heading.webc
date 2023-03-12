@@ -1,8 +1,0 @@
-<style webc:scoped>
-  h1 {
-    margin-block-start: var(--size-900);
-    margin-block-end: var(--size-900);
-  }
-</style>
-
-<h1 @text="heading"></h1>

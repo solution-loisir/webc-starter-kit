@@ -3,7 +3,7 @@ layout: base.webc
 ---
 <main>
   <article class="wrapper">
-    <first-heading :heading="title"></first-heading>
+    <h1 @text="title || meta.title"></h1>
     <series-listing :name="series" webc:if="series"></series-listing>
     <slot @raw="content"></slot>
   </article>
