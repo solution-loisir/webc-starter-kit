@@ -11,3 +11,4 @@ pagination:
   alias: posts
 ---
 <posts-list :source="posts"></posts-list>
+<pagination-navigation></pagination-navigation>
