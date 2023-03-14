@@ -2,12 +2,13 @@
   // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
 
   if(reverse) source.reverse();
-  
+
   const postListMarkup = source.map((post) => {
     let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
 
-    return `<div>
+    return `<div class="post-list">
       <p><big>${post.data.title}</big></p>
+      <p><time datetime="${validDateString(post.date)}">${readableDate(post.date)}</time></p>
       <p>${post.data.description}</p>
       ${tags ? `<div>
         ${tags.map((tag, index) => {

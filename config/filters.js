@@ -1,5 +1,8 @@
 module.exports = function(config) {
-  config.addFilter("loop", function(array, callback) {
-    return array.map((item, index, source) => callback(item, index, source)).join("\n");
+  config.addFilter("validDateString", function(date) {
+    return new Date(date).toISOString();
+  });
+  config.addFilter("readableDate", function(date) {
+    return new Date(date).toLocaleDateString("en-CA", {timeZone: "utc", year: "numeric", month: "numeric", day: "numeric"});
   });
 };
