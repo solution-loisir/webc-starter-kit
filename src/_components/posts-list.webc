@@ -1,6 +1,8 @@
 <script webc:type="js" webc:root="override">
   // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
+
   if(reverse) source.reverse();
+  
   const postListMarkup = source.map((post) => {
     let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
 
