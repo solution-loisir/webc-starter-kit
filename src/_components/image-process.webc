@@ -1,0 +1,13 @@
+<script webc:type="js" webc:root="override">
+  const Image = require("@11ty/eleventy-img");
+  const _attributes = webc.attributes;
+  const src = _attributes.src;
+  const options = _attributes.options;
+  const attributesWithoutSrc = remove(["src", "options", "uid", "webc:type"]).from(_attributes);
+
+  Image(src, options)
+    .then((imgMeta) => Image.generateHTML(imgMeta, attributesWithoutSrc, {
+      whitespaceMode: "inline"
+    }))
+    .catch((error) => console.error(error));
+</script>
