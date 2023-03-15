@@ -91,5 +91,9 @@ nav a {
 }
 
 big {
-  font-size: var(--size-500);
+  font-size: var(--size-600);
+}
+
+small {
+  font-size: var(--size-300); 
 }
