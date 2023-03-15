@@ -37,19 +37,6 @@ module.exports = function(config) {
       class: "image markdown-image",
       decoding: "async",
       sizes: "(max-width: 48rem) 300px, (max-width: 62rem) 450px, 600px"
-    },
-    renderImage(image, attributes) {
-      const [ Image, options ] = image;
-      const [ src, attrs ] = attributes;
-    
-      Image(src, options);
-
-      console.log("[markdown-it-eleventy-img] Writing _site/images/* from ./assets/images/*");
-    
-      const metadata = Image.statsSync(src, options);
-      return Image.generateHTML(metadata, attrs, {
-        whitespaceMode: "inline"
-      });
     }
   }));
 };
