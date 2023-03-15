@@ -10,9 +10,8 @@ module.exports = function(config) {
       _exclude: typeof exclude === "string" ? [exclude] : exclude,
       from(source = {}) {
         const sourceKeys = Object.keys(source);
-        
+
         this._exclude.forEach((keyToRemove) => {
-          if(!sourceKeys[keyToRemove]) return;
           const keyIndex = sourceKeys.findIndex((sourceKey) => sourceKey === keyToRemove);
           sourceKeys.splice(keyIndex, 1);
         });

@@ -5,7 +5,7 @@ layout: base.webc
   <article class="wrapper flow">
     <header>
       <h1 @text="title || meta.title"></h1>
-      <image-process src="src/assets/images/bird.jpg" alt="Eagle as profile picture" decoding="async" sizes="(max-width: 48rem) 150px, 200px" :@options="({
+      <image-process src="src/assets/images/bird.jpg" alt="Eagle as profile picture" decoding="async" sizes="(max-width: 48rem) 150px, 200px" :options="({
         widths: [200, 150],
         urlPath: '/images/',
         outputDir: '_site/images',
