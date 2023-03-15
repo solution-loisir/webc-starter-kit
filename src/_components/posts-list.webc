@@ -1,25 +1,27 @@
-<script webc:type="js" webc:root="override">
-  // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
-
-  if(reverse) source.reverse();
-
-  const postListMarkup = source.map((post) => {
-    let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
-
-    return `<div class="post-list">
-      <p><big>${post.data.title}</big></p>
-      <p><time datetime="${validDateString(post.date)}">${readableDate(post.date)}</time></p>
-      <p>${post.data.description}</p>
-      ${tags ? `<div>
-        ${tags.map((tag, index) => {
-          if(index < 4) {
-            return `<a href="/tags/${slugify(tag)}/">#${slugify(tag)}</a>`;
-          }
-        }).join("\n")}  
-      </div>` : ""}
-      <a href="${post.url}">Read post</a>
-    </div>`
-  });
+<ul role="list" class="flow">
+  <script webc:type="js" webc:root="override">
+    // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
   
-  limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
-</script>
+    if(reverse) source.reverse();
+  
+    const postListMarkup = source.map((post) => {
+      let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
+  
+      return `<li class="post-list">
+        <p><big class="font-700">${post.data.title}</big></p>
+        <p><time datetime="${validDateString(post.date)}"><small>${readableDate(post.date)}</small></time></p>
+        <p>${post.data.description}</p>
+        ${tags ? `<div>
+          ${tags.map((tag, index) => {
+            if(index < 4) {
+              return `<a href="/tags/${slugify(tag)}/">#${slugify(tag)}</a>`;
+            }
+          }).join("\n")}  
+        </div>` : ""}
+        <a href="${post.url}">Read post</a>
+      </li>`
+    });
+    
+    limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
+  </script>
+</ul>
