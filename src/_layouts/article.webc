@@ -2,8 +2,17 @@
 layout: base.webc
 ---
 <main>
-  <article class="wrapper">
-    <h1 @text="title || meta.title"></h1>
+  <article class="wrapper flow">
+    <header>
+      <h1 @text="title || meta.title"></h1>
+      <p class="article-meta">
+        <small>
+          Author: <span @text="author || meta.author.name" webc:nokeep></span>
+          <br>
+          Published on <date-time :date="date"></date-time>
+        </small>
+      </p>
+    </header>
     <series-listing :name="series" webc:if="series"></series-listing>
     <slot @raw="content"></slot>
   </article>
