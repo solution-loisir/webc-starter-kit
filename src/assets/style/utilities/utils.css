@@ -1,3 +1,7 @@
 .gap-400 {
   gap: var(--size-400);
 }
+
+.font-700 {
+  font-weight: 700;
+}
