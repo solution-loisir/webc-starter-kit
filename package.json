@@ -31,7 +31,7 @@
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-eleventy-img": "^0.10.0",
     "markdown-it-toc-done-right": "^4.2.0",
-    "netlify-cli": "^13.0.1",
+    "netlify-cli": "^13.1.6",
     "uslug": "^1.0.4"
   },
   "repository": {
