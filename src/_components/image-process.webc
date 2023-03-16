@@ -8,10 +8,12 @@
     .filter((key) => key !== "src")
     .filter((key) => key !== "uid")
     .filter((key) => key !== "options")
+    .filter((key) => key !== "attributes")
     .reduce((newObject, key) => {
       newObject[key] = _attributes[key];
       return newObject;
     }, {});
+    console.log(attributes());
 
   Image(src, options)
     .then((imgMeta) => Image.generateHTML(imgMeta, attributes(), {
