@@ -3,11 +3,18 @@
   const _attributes = webc.attributes;
   const src = _attributes.src;
   const options = _attributes.options;
-  const attributesWithoutSrc = remove(["src", "options", "uid", "webc:type", "webc:nokeep", "webc:is"]).from(_attributes);
-  console.log(attributesWithoutSrc);
+  const attributes = () => Object.keys(_attributes)
+    .filter((key) => !key.startsWith("webc:"))
+    .filter((key) => key !== "src")
+    .filter((key) => key !== "uid")
+    .filter((key) => key !== "options")
+    .reduce((acc, current) => {
+      acc[current] = _attributes[current];
+      return acc;
+    }, {});
 
   Image(src, options)
-    .then((imgMeta) => Image.generateHTML(imgMeta, attributesWithoutSrc, {
+    .then((imgMeta) => Image.generateHTML(imgMeta, attributes(), {
       whitespaceMode: "inline"
     }))
     .catch((error) => console.error(error));
