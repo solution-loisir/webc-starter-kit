@@ -2,6 +2,7 @@
 @import "global.css";
 @import "blocks/page-header.css";
 @import "blocks/flex-nav.css";
+@import "blocks/image.css";
 @import "utilities/wrapper.css";
 @import "utilities/flow.css";
 @import "utilities/utils.css";

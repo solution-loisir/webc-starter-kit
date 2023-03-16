@@ -38,7 +38,7 @@ xl: 80rem -> ~1280px
   --space-lg: max(8vh, var(--size-700));
   --space-xl: max(10vh, var(--size-800));
   /* Border radius */
-  --radius: 5px;
+  --radius: 7px;
   --radius-pill: 1em;
   --radius-round: 50%;
 }
