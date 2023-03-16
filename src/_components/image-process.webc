@@ -8,9 +8,9 @@
     .filter((key) => key !== "src")
     .filter((key) => key !== "uid")
     .filter((key) => key !== "options")
-    .reduce((acc, current) => {
-      acc[current] = _attributes[current];
-      return acc;
+    .reduce((newObject, key) => {
+      newObject[key] = _attributes[key];
+      return newObject;
     }, {});
 
   Image(src, options)
