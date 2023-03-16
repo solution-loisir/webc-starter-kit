@@ -12,6 +12,10 @@ module.exports = {
   display: "fullscreen",
   author: {
     name: "My Name",
+    image: {
+      src: "src/assets/images/bird.jpg",
+      alt: "Eagle as profile picture"
+    },
     description: "A brief description of me as an author.",
     email: "my@email.com",
     twitter: "@twitterhandle",
