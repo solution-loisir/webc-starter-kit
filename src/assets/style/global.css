@@ -99,7 +99,3 @@ big {
 small {
   font-size: var(--size-300); 
 }
-
-article > header > .article-meta {
-  line-height: 1;
-}
