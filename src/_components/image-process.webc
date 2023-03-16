@@ -3,7 +3,7 @@
   const _attributes = webc.attributes;
   const src = _attributes.src;
   const options = _attributes.options;
-  const attributesWithoutSrc = remove(["src", "options", "uid", "webc:type"]).from(_attributes);
+  const attributesWithoutSrc = remove(["src", "options", "uid", "webc:type", "webc:nokeep", "webc:is"]).from(_attributes);
   console.log(attributesWithoutSrc);
 
   Image(src, options)
