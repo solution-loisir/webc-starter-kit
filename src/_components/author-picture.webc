@@ -1,0 +1,6 @@
+<image-process @attributes decoding="async" sizes="(max-width: 48rem) 70px, 100px" class="image" :options="({
+  widths: [70, 100],
+  urlPath: '/images/',
+  outputDir: '_site/images',
+  formats: ['avif', 'webp', 'jpeg']
+})"></image-process>
