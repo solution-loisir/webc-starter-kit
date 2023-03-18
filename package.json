@@ -24,6 +24,7 @@
     "@toycode/markdown-it-class": "^1.2.4",
     "browserslist": "^4.21.5",
     "esbuild": "^0.17.11",
+    "favicons": "^7.1.1",
     "html-minifier-terser": "^7.1.0",
     "lightningcss": "^1.19.0",
     "markdown-it": "^13.0.1",
