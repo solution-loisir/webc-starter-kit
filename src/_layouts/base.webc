@@ -7,10 +7,11 @@
       `<title>${meta.title}${title ? ` | ${title}` : ""}</title>`;
     </script>
     <meta name="description" :content="description || meta.description">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
     <!--
-    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16 32x32 48x48 256x256">
-    <link rel="icon" type="image/png" href="/images/favicon/favicon_192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="/images/favicon/favicon_192.png">
     <script type="module" src="/js/index.js"></script>
     <script defer nomodule src="/js/legacy.js"></script>
     -->

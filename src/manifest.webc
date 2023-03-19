@@ -3,19 +3,19 @@ eleventyExcludeFromCollections: true
 dynamicPermalink: false
 permalink: manifest.json
 ---
-<script webc:type="js" webc:is="template">
+<script webc:type="js">
   `{
   "short_name": "${meta.title}",
     "name": "${meta.title + '. ' + meta.subtitle}",
     "description": "${meta.description}",
     "icons": [
       {
-        "src": "${meta.favicon.png192}",
+        "src": "/android-chrome-192x192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "${meta.favicon.png512}",
+        "src": "/android-chrome-512x512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
