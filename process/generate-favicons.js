@@ -17,6 +17,7 @@ const configuration = {
     response.images.map(async (image) => {
       switch(image.name) {
         case "favicon.ico":
+        case "favicon-32x32.png":
         case "android-chrome-192x192.png":
         case "android-chrome-512x512.png":
         case "apple-touch-icon-180x180.png":
