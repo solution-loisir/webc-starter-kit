@@ -25,7 +25,7 @@ module.exports = {
   favicon: {
     png192: "assets/images/favicon192.png",
     png512: "assets/images/favicon512.png",
-    ico: ""
+    source: "src/assets/images/_favicons-source/favicon.jpg"
   },
   color: {
     theme: "#000",
