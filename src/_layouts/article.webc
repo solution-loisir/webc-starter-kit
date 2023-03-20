@@ -15,6 +15,6 @@ layout: base.webc
       </p>
     </header>
     <series-listing :name="series" webc:if="series"></series-listing>
-    <slot @raw="content"></slot>
+    <div @raw="content"></div>
   </article>
 </main>
