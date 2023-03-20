@@ -1,5 +1,7 @@
 /** @param {import("@11ty/eleventy").UserConfig} config */
 
+const { chunk } = require("./utils");
+
 module.exports = function(config) {
   config.addCollection("posts", (collection) => {
     const posts = collection.getFilteredByGlob("./src/posts/*.md");
