@@ -3,7 +3,7 @@ layout: base.webc
 ---
 <main>
   <article class="wrapper flow">
-    <header>
+    <header class="flow">
       <h1 @text="title || meta.title"></h1>
       <p class="article-meta">
         <small>

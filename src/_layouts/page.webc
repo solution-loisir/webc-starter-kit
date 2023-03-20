@@ -1,7 +1,7 @@
 ---
 layout: base.webc
 ---
-<main class="wrapper">
+<main class="wrapper flow">
   <h1 @text="title || meta.title"></h1>
   <slot @raw="content"></slot>
 </main>

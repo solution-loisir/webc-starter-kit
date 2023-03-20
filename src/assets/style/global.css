@@ -57,24 +57,20 @@ body {
 
 h1 {
   font-size: var(--size-900);
-  margin-block-end: var(--size-800);
 }
 
 h2 {
   font-size: var(--size-700);
-  margin-block-end: var(--size-500);
 }
 
 h3 {
   font-size: var(--size-600);
-  margin-block-end: var(--size-400);
 }
 
 h1,
 h2,
 h3 {
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.2;
 }
 
 main {
