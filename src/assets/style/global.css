@@ -13,10 +13,12 @@ xl: 80rem -> ~1280px
   --color-accent: hwb(357 35% 1%);
   --color-dark: hwb(216 0% 98%);
   --color-light: hwb(216 98% 0%);
+  --color-light-blue: hwb(216 90% 0%);
   --color-gray: hwb(216 83% 13%);
   --color-white: #fff;
   /* Sizes */
-  --size-fluid-base: clamp(1.125rem, 0.3409vw + 1.0398rem, 1.3125rem); 
+  --size-fluid-base: clamp(1.125rem, 0.3409vw + 1.0398rem, 1.3125rem);
+  --size-200: 0.5rem;
   --size-300: 0.8rem;
   --size-400: 1rem;
   --size-500: 1.2rem;
@@ -94,4 +96,13 @@ big {
 
 small {
   font-size: var(--size-300); 
+}
+
+summary {
+  font-weight: 700;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px dashed var(--color-accent);
 }
