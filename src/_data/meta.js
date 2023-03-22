@@ -23,7 +23,9 @@ module.exports = {
     github: "https://github.com/user-name"
   },
   favicon: {
-    source: "src/assets/images/_favicons-source/favicon.jpg"
+    source: "src/assets/images/_favicons-source/favicon.jpg",
+    temp: "src/assets/images/favicons/",
+    dest: "/"
   },
   color: {
     theme: "#000",

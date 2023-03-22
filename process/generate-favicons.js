@@ -6,7 +6,7 @@ const meta = require("../src/_data/meta");
 const source = meta.favicon.source;
 
 const configuration = {
-  path: "src/assets/images/favicons/"
+  path: meta.favicon.temp
 };
 
 (async function generateFavicons() {

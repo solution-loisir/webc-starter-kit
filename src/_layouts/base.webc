@@ -7,10 +7,13 @@
       `<title>${meta.title}${title ? ` | ${title}` : ""}</title>`;
     </script>
     <meta name="description" :content="description || meta.description">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+    <script webc:type="js" webc:is="link" webc:raw>
+      const path = require("path");
+      `<link rel="icon" type="image/x-icon" href="${path.join(meta.favicon.dest, 'favicon.ico')}" sizes="32x32">
+      <link rel="icon" type="image/png" href="${path.join(meta.favicon.dest, 'favicon-32x32.png')}" sizes="32x32">
+      <link rel="icon" type="image/png" href="${path.join(meta.favicon.dest, 'android-chrome-192x192.png')}" sizes="192x192">
+      <link rel="apple-touch-icon" href="${path.join(meta.favicon.dest, 'apple-touch-icon-180x180.png')}">`;
+    </script>
     <!--
     <script type="module" src="/js/index.js"></script>
     <script defer nomodule src="/js/legacy.js"></script>

@@ -1,5 +1,7 @@
+const meta = require("../src/_data/meta");
+
 module.exports = function(config) {
   config.setServerPassthroughCopyBehavior("passthrough");
 
-  config.addPassthroughCopy({ "src/assets/images/favicons/": "/" });
+  config.addPassthroughCopy({ [meta.favicon.temp]: meta.favicon.dest });
 };
