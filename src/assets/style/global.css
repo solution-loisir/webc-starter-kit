@@ -58,6 +58,10 @@ body {
   overflow-x: hidden;
 }
 
+p + p {
+  margin-block-start: var(--size-300);
+}
+
 h1 {
   font-size: var(--size-900);
 }

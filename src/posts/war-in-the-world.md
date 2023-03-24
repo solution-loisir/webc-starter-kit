@@ -14,7 +14,7 @@ tags: love
 <auto-toc></auto-toc>
 
 ## Our futur
-There is war in this world. Maybe, some day, it will end.
+There is war in this world. Maybe, some day, it will end. I'm writing this as we speak.
 
 Other paragraph.
 
