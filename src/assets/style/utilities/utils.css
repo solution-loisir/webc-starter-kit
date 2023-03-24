@@ -2,6 +2,6 @@
   gap: var(--size-400);
 }
 
-.font-700 {
+.bold {
   font-weight: 700;
 }

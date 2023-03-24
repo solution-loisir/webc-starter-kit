@@ -8,7 +8,7 @@
       let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
   
       return `<li class="post-list">
-        <p><big class="font-700">${post.data.title}</big></p>
+        <p><big class="bold">${post.data.title}</big></p>
         <p><time datetime="${validDateString(post.date)}"><small>${readableDate(post.date)}</small></time></p>
         <p>${post.data.description}</p>
         ${tags ? `<div>
