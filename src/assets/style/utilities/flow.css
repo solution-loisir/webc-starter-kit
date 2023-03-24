@@ -1,3 +1,7 @@
 .flow > * + * {
   margin-block-start: var(--flow-space, var(--space));
 }
+
+.flow[data-space="md"] {
+  --flow-space: var(--space-md);
+}

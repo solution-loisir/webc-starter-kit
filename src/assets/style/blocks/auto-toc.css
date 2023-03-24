@@ -1,9 +1,6 @@
-.auto-toc ul {
-  list-style-type: "⚡ ";
-}
-
 .contents {
   background-color: var(--color-light-blue);
+  margin-block-end: var(--space-md);
   padding-inline: var(--padding-sm);
   padding-block: var(--size-200);
   border-radius: var(--radius);

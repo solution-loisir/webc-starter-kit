@@ -11,15 +11,12 @@ og_image_width: ""
 og_image_height: ""
 tags: love
 ---
-<details class="contents">
-  <summary>Contents</summary>
-  <hr>
-  
-  [toc]
-</details>
+<auto-toc></auto-toc>
 
 ## Our futur
 There is war in this world. Maybe, some day, it will end.
+
+Other paragraph.
 
 <syntax-highlight language="js">
 function test() {

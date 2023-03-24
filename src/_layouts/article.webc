@@ -1,9 +1,9 @@
 ---
 layout: base.webc
 ---
-<main>
-  <article class="wrapper flow">
-    <header class="flow">
+<main class="wrapper">
+  <article class="flow" data-space="md">
+    <header class="flow" data-space="md">
       <h1 @text="title || meta.title"></h1>
       <p class="article-meta">
         <small>
