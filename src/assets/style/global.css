@@ -85,7 +85,8 @@ a {
   display: inline-block;
 }
 
-nav a {
+nav a,
+.header-anchor {
   color: inherit;
   text-decoration: none;
 }
@@ -104,5 +105,5 @@ summary {
 
 hr {
   border: 0;
-  border-bottom: 2px dashed var(--color-accent);
+  border-bottom: 2px dashed var(--color-primary);
 }
