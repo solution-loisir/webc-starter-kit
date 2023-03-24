@@ -1,4 +1,4 @@
 <header :class="headerClass">
-  <figure></figure>
+  <figure><big>WebC</big></figure>
   <main-nav :data-source="collections.pages"></main-nav>
 </header>

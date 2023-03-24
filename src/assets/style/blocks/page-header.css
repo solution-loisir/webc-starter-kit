@@ -1,9 +1,10 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: var(--size-300);
+  row-gap: var(--size-300);
+  column-gap: var(--size-900);
   padding-block: var(--padding-sm);
   padding-inline: var(--padding-md);
   box-shadow: 3px 3px 10px -3px #d3d8de;
