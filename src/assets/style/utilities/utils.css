@@ -5,3 +5,23 @@
 .bold {
   font-weight: 700;
 }
+
+.line-height-xs {
+  line-height: 0.5;
+}
+
+.line-height-sm {
+  line-height: 0.8;
+}
+
+.big {
+  font-size: var(--size-600);
+}
+
+.small {
+  font-size: var(--size-300); 
+}
+
+.margin-block-0 {
+  margin-block: 0;
+}

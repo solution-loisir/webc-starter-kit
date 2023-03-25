@@ -1,7 +1,0 @@
-article > header > .article-meta {
-  line-height: 1;
-}
-
-article > header > .article-meta .image {
-  margin-block-end: 0.5em;
-}

@@ -1,4 +1,4 @@
-<ul role="list" class="flow">
+<ul role="list" class="flow-md">
   <script webc:type="js" webc:root="override">
     // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
   
@@ -7,9 +7,11 @@
     const postListMarkup = source.map((post) => {
       let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
   
-      return `<li class="post-list">
-        <p><big class="bold">${post.data.title}</big></p>
-        <p><time datetime="${validDateString(post.date)}"><small>${readableDate(post.date)}</small></time></p>
+      return `<li class="flow-sm">
+        <div class="flow-sm line-height-sm">
+          <p class="big bold">${post.data.title}</p>
+          <p class="small"><time datetime="${validDateString(post.date)}">${readableDate(post.date)}</time></p>
+        </div>
         <p>${post.data.description}</p>
         ${tags ? `<div>
           ${tags.map((tag, index) => {

@@ -7,8 +7,6 @@ navigation:
   order: 1
   label: Home
 ---
-<div class="flow">
-  <h2>Most recent posts</h2>
-  <posts-list :source="collections.posts" limit="4"></posts-list>
-  <a href="/blog/">View all posts</a>
-</div>
+<h2>Most recent posts</h2>
+<posts-list :source="collections.posts" limit="4"></posts-list>
+<a href="/blog/">View all posts</a>

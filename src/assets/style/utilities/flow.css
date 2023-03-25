@@ -1,7 +1,15 @@
 .flow > * + * {
-  margin-block-start: var(--flow-space, var(--space));
+  margin-block-start: var(--flow-space, var(--size-400));
 }
 
-.flow[data-space="md"] {
-  --flow-space: var(--space-md);
+.flow-sm > * + * {
+  margin-block-start: var(--size-200);
+}
+
+.flow-md > * + * {
+  margin-block-start: var(--size-700);
+}
+
+.flow-lg > * + * {
+  margin-block-start: var(--size-900);
 }

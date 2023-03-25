@@ -1,6 +1,6 @@
 .contents {
   background-color: var(--color-light-blue);
-  margin-block-end: var(--space-md);
+  margin-block-end: var(--size-400);
   padding-inline: var(--padding-sm);
   padding-block: var(--size-200);
   border-radius: var(--radius);

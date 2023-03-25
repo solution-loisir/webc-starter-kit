@@ -1,5 +1,5 @@
-<nav class="flex-nav">
-  <ul role="list" class="gap-400">
+<nav>
+  <ul role="list" class="flex gap-400">
     <script webc:type="js">
       dataSource.map((item) => `<li><a href="${item.page.url}"${item.page.url === page.url ? ` aria-current="page"` : ""}>${item.data.navigation.label}</a></li>`).join("\n");
     </script>

@@ -2,17 +2,14 @@
 layout: base.webc
 ---
 <main class="wrapper">
-  <article class="flow" data-space="md">
-    <header class="flow" data-space="md">
+  <article class="flow-lg">
+    <header class="flow-lg">
       <h1 @text="title || meta.title"></h1>
-      <p class="article-meta">
-        <small>
-          <author-picture :src="author_image" :alt="author_image_alt"></author-picture>
-          Author: <span @text="author || meta.author.name" webc:nokeep></span>
-          <br>
-          Published on <date-time :date="date"></date-time>
-        </small>
-      </p>
+      <div class="flow-sm line-height-xs">
+        <author-picture :src="author_image" :alt="author_image_alt"></author-picture>
+        <p class="small">Author: <span @text="author || meta.author.name" webc:nokeep></span></p>
+        <p class="small">Published on <date-time :date="date"></date-time></p>
+      </div>
     </header>
     <series-listing :name="series" webc:if="series"></series-listing>
     <div @raw="content"></div>

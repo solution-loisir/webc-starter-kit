@@ -34,12 +34,6 @@ xl: 80rem -> ~1280px
   /* Measures */
   --width-md: min(65ch, var(--min-width, 94vw));
   --width-lg: min(80ch, var(--min-width, 94vw));
-  /* Flow */
-  --space-sm: max(2vh, var(--size-400));
-  --space: max(4vh, var(--size-500));
-  --space-md: max(6vh, var(--size-600));
-  --space-lg: max(8vh, var(--size-700));
-  --space-xl: max(10vh, var(--size-800));
   /* Border radius */
   --radius: 7px;
   --radius-pill: 1em;
@@ -96,12 +90,8 @@ nav a,
   text-decoration: none;
 }
 
-big {
-  font-size: var(--size-600);
-}
-
-small {
-  font-size: var(--size-300); 
+nav ul {
+  margin-block: 0;
 }
 
 hr {
