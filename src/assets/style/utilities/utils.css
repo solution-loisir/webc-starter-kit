@@ -1,3 +1,11 @@
+.gap-200 {
+  gap: var(--size-200);
+}
+
+.gap-300 {
+  gap: var(--size-300);
+}
+
 .gap-400 {
   gap: var(--size-400);
 }
@@ -12,6 +20,10 @@
 
 .line-height-sm {
   line-height: 0.8;
+}
+
+.line-height-md {
+  line-height: 1.2;
 }
 
 .big {

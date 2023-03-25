@@ -7,19 +7,21 @@
     const postListMarkup = source.map((post) => {
       let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
   
-      return `<li class="flow-sm">
+      return `<li class="flow">
         <div class="flow-sm line-height-sm">
           <p class="big bold">${post.data.title}</p>
           <p class="small"><time datetime="${validDateString(post.date)}">${readableDate(post.date)}</time></p>
         </div>
-        <p>${post.data.description}</p>
-        ${tags ? `<div>
-          ${tags.map((tag, index) => {
-            if(index < 4) {
-              return `<a href="/tags/${slugify(tag)}/">#${slugify(tag)}</a>`;
-            }
-          }).join("\n")}  
-        </div>` : ""}
+        <div class="line-height-md">
+          <p>${post.data.description}</p>
+          ${tags ? `<div class="flex gap-200">
+            ${tags.map((tag, index) => {
+              if(index < 4) {
+                return `<a href="/tags/${slugify(tag)}/" class="small">#${slugify(tag)}</a>`;
+              }
+            }).join("\n")}  
+          </div>` : ""}
+        </div>
         <a href="${post.url}">Read post</a>
       </li>`
     });
