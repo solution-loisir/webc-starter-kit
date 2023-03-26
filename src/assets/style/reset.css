@@ -25,8 +25,6 @@ dd {
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
-  padding-inline: 0;
-  margin-inline: 0;
 }
 
 /* Set core root defaults */
