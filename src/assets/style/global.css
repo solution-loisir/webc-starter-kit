@@ -26,6 +26,7 @@ xl: 80rem -> ~1280px
   --size-700: 1.7rem;
   --size-800: 2rem;
   --size-900: 2.4rem;
+  --size-1200: 3.9rem;
   /* Padding */
   --padding-sm: clamp(var(--size-400), 5%, var(--size-500));
   --padding-md: clamp(var(--size-500), 7%, var(--size-600));
@@ -57,21 +58,26 @@ p + p {
 }
 
 h1 {
-  font-size: var(--size-900);
+  font-size: var(--size-1200);
 }
 
 h2 {
-  font-size: var(--size-700);
+  font-size: var(--size-900);
 }
 
 h3 {
-  font-size: var(--size-600);
+  font-size: var(--size-800);
 }
 
 h1,
 h2,
 h3 {
   font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+
+:target {
+  scroll-margin-top: var(--size-300);
 }
 
 main {

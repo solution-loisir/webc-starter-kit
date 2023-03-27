@@ -1,0 +1,14 @@
+.post-list li {
+  padding-inline: var(--size-400);
+  padding-block: var(--size-300);
+  flex-basis: 25ch;
+  flex-grow: 1;
+  flex-shrink: 1;
+  outline: 2.5px dashed var(--color-primary);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-light-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--size-400);
+}
