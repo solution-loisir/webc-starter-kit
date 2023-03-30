@@ -10,10 +10,10 @@ og_image_alt: ""
 og_image_width: ""
 og_image_height: ""
 tags:
-  - menta health
+  - mental health
   - love
   - care
   - society
   - the world
 ---
-<image src="https://apod.nasa.gov/apod/image/2208/StargateMilkyWay_Oudoux_1800.jpg" alt="Spectacular night sky from the Nasa showing the milkyway"></image>
+<image src="https://apod.nasa.gov/apod/image/2208/StargateMilkyWay_Oudoux_1800.jpg" alt="Spectacular night sky from the Nasa showing the milkyway" loading="lazy"></image>

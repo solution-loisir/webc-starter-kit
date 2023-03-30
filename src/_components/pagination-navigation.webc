@@ -1,6 +1,6 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <nav>
-  <ul role="list" class="flex">
+  <ul role="list" class="flex justify-center">
     <li>
       <a :href="pagination.href.first === page.url ? null : pagination.href.first">
         <svg 

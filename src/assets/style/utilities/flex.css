@@ -2,3 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.justify-center {
+  justify-content: center;
+}

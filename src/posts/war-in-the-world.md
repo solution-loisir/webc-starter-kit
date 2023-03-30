@@ -18,6 +18,9 @@ There is war in this world. Maybe, some day, it will end. I'm writing this as we
 
 Other paragraph.
 
+### How we see things
+It is not always obvious to see things clearly.
+
 <syntax-highlight language="js">
 function test() {
   return true;

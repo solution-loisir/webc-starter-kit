@@ -5,3 +5,8 @@
   padding-block: var(--size-200);
   border-radius: var(--radius);
 }
+
+.contents ul {
+  margin-block: 0;
+  padding-inline-start: var(--padding-sm);
+}
