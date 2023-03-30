@@ -1,20 +1,16 @@
 <script webc:type="js" webc:root="override">
   const Image = require("@11ty/eleventy-img");
-  const _attributes = webc.attributes;
+  const _attributes = webc.filterPublicAttributes(webc.attributes);
   const src = _attributes.src;
-  const options = _attributes.options || {};
+  const _options = options || {};
   const attributes = () => Object.keys(_attributes)
-    .filter((key) => !key.startsWith("webc:"))
     .filter((key) => key !== "src")
-    .filter((key) => key !== "uid")
-    .filter((key) => key !== "options")
-    .filter((key) => key !== "attributes")
     .reduce((newObject, key) => {
       newObject[key] = _attributes[key];
       return newObject;
     }, {});
 
-  Image(src, options)
+  Image(src, _options)
     .then((imgMeta) => Image.generateHTML(imgMeta, attributes(), {
       whitespaceMode: "inline"
     }))
