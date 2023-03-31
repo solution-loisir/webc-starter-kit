@@ -6,12 +6,12 @@ layout: base.webc
     <header class="flow-lg">
       <h1 @text="title || meta.title"></h1>
       <div class="flow-sm line-height-xs">
-        <author-picture :src="author_image" :alt="author_image_alt"></author-picture>
+        <author-picture :src="$data.author_image" :alt="$data.author_image_alt"></author-picture>
         <p class="small">Author: <span @text="author || meta.author.name" webc:nokeep></span></p>
         <p class="small">Published on <date-time :date="date"></date-time></p>
       </div>
     </header>
-    <series-listing :name="series" webc:if="series"></series-listing>
+    <series-listing :name="$data.series" webc:if="series"></series-listing>
     <div @raw="content"></div>
   </article>
 </main>

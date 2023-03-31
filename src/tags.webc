@@ -4,4 +4,4 @@ pagination:
   data: collections.tags
   size: 1
 ---
-<posts-list :source="collections[pagination.items[0]]" reverse="true"></posts-list>
+<posts-list :source="$data.collections[$data.pagination.items[0]]" reverse="true"></posts-list>

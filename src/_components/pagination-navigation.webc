@@ -2,7 +2,7 @@
 <nav>
   <ul role="list" class="flex justify-center">
     <li>
-      <a :href="pagination.href.first === page.url ? null : pagination.href.first">
+      <a :href="$data.pagination.href.first === $data.page.url ? null : $data.pagination.href.first">
         <svg 
           width="2.5rem" 
           height="3rem" 
@@ -16,7 +16,7 @@
           <path opacity="0.15" d="M19 18L19 6L9 12L19 18Z" fill="#d4d8de"/>
           <path 
             d="M5 18L5 6M19 6V18L9 12L19 6Z" 
-            :stroke="pagination.href.first === page.url ? '#d4d8de' : '#000205'" 
+            :stroke="$data.pagination.href.first === $data.page.url ? '#d4d8de' : '#000205'" 
             stroke-width="1.5" 
             stroke-linecap="round" 
             stroke-linejoin="round"
@@ -25,7 +25,7 @@
       </a>
     </li>
     <li>
-      <a :href="pagination.href.previous">
+      <a :href="$data.pagination.href.previous">
         <svg 
           width="2.5rem" 
           height="3rem" 
@@ -39,7 +39,7 @@
           <path opacity="1" d="M12 18L12 6L3 12L12 18Z" fill="#d4d8de"/>
           <path 
             d="M12 13.8L19 18V6L12 10.2M12 18L12 6L3 12L12 18Z" 
-            :stroke="pagination.href.previous ? '#000205' : '#d4d8de'" 
+            :stroke="$data.pagination.href.previous ? '#000205' : '#d4d8de'" 
             stroke-width="1.5" 
             stroke-linecap="round" 
             stroke-linejoin="round"
@@ -48,7 +48,7 @@
       </a>
     </li>
     <li>
-      <a :href="pagination.href.next">
+      <a :href="$data.pagination.href.next">
         <svg 
           width="2.5rem" 
           height="3rem" 
@@ -62,7 +62,7 @@
           <path opacity="1" d="M11 18L11 6L20 12L11 18Z" fill="#d4d8de"/>
           <path 
             d="M12 10.2L5 6L5 18L12 13.8M12 6L12 18L21 12L12 6Z" 
-            :stroke="pagination.href.next ? '#000205' : '#d4d8de'" 
+            :stroke="$data.pagination.href.next ? '#000205' : '#d4d8de'" 
             stroke-width="1.5" 
             stroke-linecap="round" 
             stroke-linejoin="round"
@@ -71,7 +71,7 @@
       </a>
     </li>
     <li>
-      <a :href="pagination.href.last === page.url ? null : pagination.href.last">
+      <a :href="$data.pagination.href.last === $data.page.url ? null : $data.pagination.href.last">
         <svg 
           width="2.5rem" 
           height="3rem" 
@@ -85,7 +85,7 @@
           <path opacity="0.15" d="M5 6V18L15 12L5 6Z" fill="#d4d8de"/>
           <path 
             d="M19 6V18M5 18L5 6L15 12L5 18Z" 
-            :stroke="pagination.href.last === page.url ? '#d4d8de' : '#000205'" 
+            :stroke="$data.pagination.href.last === $data.page.url ? '#d4d8de' : '#000205'" 
             stroke-width="1.5" 
             stroke-linecap="round" 
             stroke-linejoin="round"

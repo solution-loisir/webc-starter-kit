@@ -1,7 +1,7 @@
 <script webc:type="js" webc:root="override">
-  const initialYear = this.firstInProduction ? new Date(this.firstInProduction).getFullYear() : new Date().getFullYear();
+  const initialYear = firstInProduction ? new Date(firstInProduction).getFullYear() : new Date().getFullYear();
   const currentYear = new Date().getFullYear();
   const yearStatement = (currentYear - initialYear) > 0 ? `${initialYear}-${currentYear}` : initialYear;
 
-  `<p>&copy; ${yearStatement} ${this.orgName}</p>`;
+  `<p>&copy; ${yearStatement} ${orgName}</p>`;
 </script>
