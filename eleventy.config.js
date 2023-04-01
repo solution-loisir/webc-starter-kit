@@ -7,8 +7,17 @@ module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy-plugin-webc"), {
     components: [
       "src/_components/**/*.webc",
-      "./node_modules/@11ty/eleventy-plugin-syntaxhighlight/syntax-highlight.webc"
+      "./node_modules/@11ty/eleventy-plugin-syntaxhighlight/syntax-highlight.webc",
+      "npm:@11ty/eleventy-img/*.webc"
     ]
+  });
+  config.addPlugin(require("@11ty/eleventy-img").eleventyImagePlugin, {
+    urlPath: "/images/",
+    outputDir: "_site/images",
+    formats: ["avif", "webp", "jpeg"],
+    defaultAttributes: {
+			decoding: "async"
+		}
   });
   config.addPlugin(require("./config/markdown"));
   config.addPlugin(require("./config/collections"));

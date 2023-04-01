@@ -1,6 +1,1 @@
-<image-process @attributes decoding="async" sizes="(max-width: 48rem) 300px, (max-width: 62rem) 450px, 600px" class="image" :@options="({
-  widths: [600, 450, 300],
-  urlPath: '/images/',
-  outputDir: '_site/images',
-  formats: ['avif', 'webp', 'jpeg']
-})"></image-process>
+<eleventy-image @attributes :width="[600, 450, 300]" sizes="(max-width: 48rem) 300px, (max-width: 62rem) 450px, 600px" class="image"></eleventy-image>
