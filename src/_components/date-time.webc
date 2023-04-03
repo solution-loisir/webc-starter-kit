@@ -1,1 +1,1 @@
-<time :datetime="validDateString($data.date)" @html="readableDate($data.date)"></time>
+<time :datetime="validDateString(date)" @html="readableDate(date)"></time>
