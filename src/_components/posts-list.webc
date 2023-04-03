@@ -11,7 +11,7 @@
         <div class="flow">
           <div class="flow-sm line-height-sm">
             <p class="big bold">${post.data.title}</p>
-            <p class="small"><time datetime="${validDateString(post.date)}">${readableDate(post.date)}</time></p>
+            <p class="small"><date-time date="${post.date}"></date-time></p>
           </div>
           <div class="line-height-md">
             <p>${post.data.description}</p>
