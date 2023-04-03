@@ -4,11 +4,11 @@ const slug = require("../node_modules/@11ty/eleventy/src/Filters/Slug");
 const title = process.argv[2];
 const fileName = slug(title);
 const filePath = path.join("./src/posts/", fileName + ".md");
-const { numericDate } = require("../config/utils/numeric-date");
+const { formatDateLocal } = require("../config/utils/format-date");
 const data = `---
 title: ${title}
 description: ""
-date: ${numericDate()}
+date: ${formatDateLocal("YYYY-MM-DD")}
 lang: en
 published: false
 series: false
