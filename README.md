@@ -1,2 +1,48 @@
 # webc-starter-kit
-A starter project for Eleventy (11ty) using WebC as a main template langage. Also includes opiniated assets processing and a few more bells and whistles.
+A starter project for [Eleventy](https://www.11ty.dev/) (11ty) using [WebC](https://www.11ty.dev/docs/languages/webc/) as a main template langage. Also includes opiniated assets processing and a few more bells and whistles.
+
+This is really a blog stater project, but can be adapted to other means. I entend to use this as a base for my futur projects.
+
+## Config: `eleventy.config.js`
+Since Eleventy v2.0.0, it's possible to use differently named config file. This poject uses `eleventy.config.js` located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the `config` folder (except for external plugins). Here's a sample of the config object.
+```js
+return {
+  dir: {
+    input: "src",
+    output: "_site",
+    includes: "_includes",
+    layouts: "_layouts",
+    data: "_data"
+  },
+  pathPrefix: "/",
+  htmlTemplateEngine: "webc",
+  markdownTemplateEngine: "webc",
+  templateFormats: ["njk", "liquid", "html", "md", "11ty.js", "webc"]
+};
+```
+## Plugins
+Webc starter kit uses several plugins.
+### Official plugins
+* eleventy-plugin-rss
+* eleventy-plugin-syntaxhighlight
+* eleventy-plugin-webc
+* eleventy-img
+### Markdown plugins
+* markdown-it-anchor
+* markdown-it-toc-done-right
+* markdown-it-attrs
+* markdown-it-eleventy-img
+## Collections
+Collections included in Webc starter kit.
+### `posts` collection
+Contains every `.md` files living in the `posts` directory. Reversed order. Intended for blog posts.
+### `pages` collection
+Contains every `.webc` files living in the `pages` directory. Ordered ascending by the `navigation.order` property. These represents the pages of the site.
+### `series` collection
+Consist of an object containing all series grouped by name. Only markdown file inside of the `posts` directory and containig a `series` property with a string value (the name of the series). Falsy values will be exluded.
+### `tags` collection
+A deduplicated list of all posts tags. Used to generate tags pages.
+## Generator scripts
+Located in the `process` directory. These are utility node scripts
+
+Work in progress...
