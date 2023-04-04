@@ -24,6 +24,7 @@ module.exports = function(config) {
   config.addPlugin(require("./config/filters"));
   config.addPlugin(require("./config/transforms"));
   config.addPlugin(require("./config/cssFormat"));
+  config.addPlugin(require("./config/jsFormat"));
   config.addPlugin(require("./config/passthroughCopy"));
   
   config.setWatchJavaScriptDependencies(false);

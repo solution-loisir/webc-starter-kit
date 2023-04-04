@@ -11,13 +11,17 @@ description: ""
 date: ${formatDateLocal("YYYY-MM-DD")}
 lang: en
 published: false
-series: false
+series: ""
+toc: false
 og_image: ""
 og_image_alt: ""
 og_image_width: ""
 og_image_height: ""
 tags: ""
----`;
+---
+<auto-toc></auto-toc>
+
+`;
 
 try {
   fs.accessSync(filePath);

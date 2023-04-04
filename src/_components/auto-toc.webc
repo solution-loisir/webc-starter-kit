@@ -1,6 +1,10 @@
-<details class="contents">
-  <summary class="bold">Contents</summary>
-  <hr>
-  
-  [toc]
-</details>
+<p></p>
+<details-utils animate webc:if="$data.toc" webc:raw>
+  <details class="contents">
+    <summary class="bold">Contents</summary>
+    <div>
+    
+    [toc]
+    </div>
+  </details>
+</details-utils>

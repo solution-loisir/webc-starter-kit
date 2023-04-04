@@ -14,10 +14,7 @@
       <link rel="icon" type="image/png" href="${path.join(meta.favicon.dest, 'android-chrome-192x192.png')}" sizes="192x192">
       <link rel="apple-touch-icon" href="${path.join(meta.favicon.dest, 'apple-touch-icon-180x180.png')}">`;
     </script>
-    <!--
-    <script type="module" src="/js/index.js"></script>
-    <script defer nomodule src="/js/legacy.js"></script>
-    -->
+    <script defer src="/assets/js/index.js" webc:keep></script>
     <script webc:raw>document.documentElement.classList.remove("no-js");</script>
     <link rel="stylesheet" type="text/css" href="/assets/style/index.css" webc:raw>
     <style @raw="getBundle('css')" webc:keep></style>
@@ -38,6 +35,7 @@
     <meta property="og:locale" :content="lang || 'en'">
     <meta property="og:site_name" :content="meta.title">
     <meta property="article:author" :content="og_author" webc:if="og_author">
+    <script @raw="getBundle('js')" webc:keep></script>
   </head>
   <body>
     <page-header header-class="page-header"></page-header>

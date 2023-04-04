@@ -5,6 +5,7 @@ date: 2023-02-24
 lang: en
 published: true
 series: political thinking!
+toc: false
 og_image: ""
 og_image_alt: ""
 og_image_width: ""
