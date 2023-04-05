@@ -3,6 +3,20 @@ A starter project for [Eleventy](https://www.11ty.dev/) (11ty) using [WebC](http
 
 This is really a blog stater project, but can be adapted to other means. I entend to use this as a base for my futur projects.
 
+## Features
+* RSS feed through Atom.
+* Sitemap with `robot.txt` pointing to it.
+* Site manifest.
+* Tags pages
+* JS pipeline with [esbuild](https://esbuild.github.io/).
+* CSS pipeline with [Lightning CSS](https://lightningcss.dev/).
+* Image optimization with [eleventy-img](https://www.11ty.dev/docs/plugins/image/).
+* Custom 404 page at the root. May require specific integration depending on your hosting setup/platform.
+* Already setup for [Netlify dev](https://www.netlify.com/products/cli/) and specific configuration through `netlify.toml`.
+* Automation for favicons and new post generation.
+* Minifying HTML, CSS and JavaScript in production.
+* Comprehensive meta data file to configure site's parameters in one place.
+
 ## Config: `eleventy.config.js`
 The `eleventy.config.js` config file is located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the `config` folder (except for external plugins). Here's a sample of the config object.
 ```js
@@ -26,7 +40,7 @@ Webc starter kit uses several plugins.
 * eleventy-plugin-rss
 * eleventy-plugin-syntaxhighlight
 * eleventy-plugin-webc
-* eleventy-img
+* [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
 ### Markdown plugins
 * markdown-it-anchor
 * markdown-it-toc-done-right
