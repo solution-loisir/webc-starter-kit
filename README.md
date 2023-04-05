@@ -15,6 +15,7 @@ This is really a blog stater project, but can be adapted to other means. I enten
 * JS pipeline with [esbuild](https://esbuild.github.io/).
 * CSS pipeline with [Lightning CSS](https://lightningcss.dev/).
 * Image optimization with [eleventy-img](https://www.11ty.dev/docs/plugins/image/).
+* [Serverless](https://www.11ty.dev/docs/plugins/serverless/): uncomment in config file to use.
 * Custom 404 page at the root. May require specific integration depending on your hosting setup/platform.
 * Already setup for [Netlify dev](https://www.netlify.com/products/cli/) and specific configuration through `netlify.toml`.
 * Automation for favicons and new post generation.
@@ -45,6 +46,7 @@ Webc starter kit uses several plugins.
 * [eleventy-plugin-syntaxhighlight](https://www.11ty.dev/docs/plugins/syntaxhighlight/)
 * [eleventy-plugin-webc](https://www.11ty.dev/docs/languages/webc/)
 * [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
+* [eleventy-serverless](https://www.11ty.dev/docs/plugins/serverless/)
 ### Markdown plugins
 * [markdown-it-anchor](https://www.npmjs.com/package/markdown-it-anchor)
 * [markdown-it-toc-done-right](https://www.npmjs.com/package/markdown-it-toc-done-right)

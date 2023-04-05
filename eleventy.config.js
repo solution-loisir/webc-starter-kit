@@ -1,7 +1,15 @@
 /** @param {import("@11ty/eleventy").UserConfig} config */
 
+const { EleventyRenderPlugin, EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+
 module.exports = function(config) {
-  config.addPlugin(require("@11ty/eleventy").EleventyRenderPlugin);
+  config.addPlugin(EleventyRenderPlugin);
+  /*
+  config.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "dynamic",
+    functionsDir: "./netlify/functions/",
+  });
+  */
   config.addPlugin(require("@11ty/eleventy-plugin-rss"));
   config.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
   config.addPlugin(require("@11ty/eleventy-plugin-webc"), {
