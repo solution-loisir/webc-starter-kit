@@ -8,6 +8,10 @@ This is really a blog stater project, but can be adapted to other means. I enten
 * Sitemap with `robot.txt` pointing to it.
 * Site manifest.
 * Tags pages
+* `no-js` class strategy for progressive enhancement.
+* Series for posts.
+* Table of contents for posts.
+* UNSTABLE: draft feature for posts. This feature prevents production build to complete. See [#59](https://github.com/11ty/eleventy-plugin-webc/issues/59).
 * JS pipeline with [esbuild](https://esbuild.github.io/).
 * CSS pipeline with [Lightning CSS](https://lightningcss.dev/).
 * Image optimization with [eleventy-img](https://www.11ty.dev/docs/plugins/image/).
@@ -39,7 +43,7 @@ Webc starter kit uses several plugins.
 ### Official plugins
 * eleventy-plugin-rss
 * eleventy-plugin-syntaxhighlight
-* eleventy-plugin-webc
+* [eleventy-plugin-webc](https://www.11ty.dev/docs/languages/webc/)
 * [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
 ### Markdown plugins
 * markdown-it-anchor
