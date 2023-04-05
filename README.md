@@ -4,7 +4,7 @@ A starter project for [Eleventy](https://www.11ty.dev/) (11ty) using [WebC](http
 This is really a blog stater project, but can be adapted to other means. I entend to use this as a base for my futur projects.
 
 ## Config: `eleventy.config.js`
-Since Eleventy v2.0.0, it's possible to use differently named config file. This poject uses `eleventy.config.js` located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the `config` folder (except for external plugins). Here's a sample of the config object.
+The `eleventy.config.js` config file is located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the `config` folder (except for external plugins). Here's a sample of the config object.
 ```js
 return {
   dir: {
