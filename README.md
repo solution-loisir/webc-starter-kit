@@ -41,15 +41,15 @@ return {
 ## Plugins
 Webc starter kit uses several plugins.
 ### Official plugins
-* eleventy-plugin-rss
-* eleventy-plugin-syntaxhighlight
+* [eleventy-plugin-rss](https://www.11ty.dev/docs/plugins/rss/)
+* [eleventy-plugin-syntaxhighlight](https://www.11ty.dev/docs/plugins/syntaxhighlight/)
 * [eleventy-plugin-webc](https://www.11ty.dev/docs/languages/webc/)
 * [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
 ### Markdown plugins
-* markdown-it-anchor
-* markdown-it-toc-done-right
-* markdown-it-attrs
-* markdown-it-eleventy-img
+* [markdown-it-anchor](https://www.npmjs.com/package/markdown-it-anchor)
+* [markdown-it-toc-done-right](https://www.npmjs.com/package/markdown-it-toc-done-right)
+* [markdown-it-attrs](https://www.npmjs.com/package/markdown-it-attrs)
+* [markdown-it-eleventy-img](https://www.npmjs.com/package/markdown-it-eleventy-img)
 ## Collections
 Collections included in Webc starter kit.
 ### `posts` collection
