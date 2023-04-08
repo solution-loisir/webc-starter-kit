@@ -1,17 +1,21 @@
 [build]
-  publish = "_site"
-  command = "npm run build"
+publish = "_site"
+command = "npm run build"
+
 [dev]
-  command = "npm start"
+command = "npm start"
+
 [functions]
-  node_bundler = "esbuild"
+node_bundler = "esbuild"
+
 [[headers]]
-  for = "/*"
+for = "/*"
+
   [headers.values]
-    Content-Security-Policy = "default-src https:"
-    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "1; mode=block"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "no-referrer"
-    Permissions-Policy = "autoplay=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=()"
+  Content-Security-Policy = "default-src https:"
+  Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+  X-Frame-Options = "SAMEORIGIN"
+  X-XSS-Protection = "1; mode=block"
+  X-Content-Type-Options = "nosniff"
+  Referrer-Policy = "no-referrer"
+  Permissions-Policy = "autoplay=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=()"
