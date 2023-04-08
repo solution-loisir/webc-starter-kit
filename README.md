@@ -25,6 +25,13 @@ Webc starter kit is a template repository. Use the "Use this template" button to
 * Minifying HTML, CSS and JavaScript in production.
 * Comprehensive meta data file to configure site's parameters in one place.
 
+## Pages
+Pages are located in the `pages` directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the `page` layout. The "Home" page is remapped to project's root index. The following properties may be defined in front matter:
+* `title` -> document tile and first heading (`<h1>`).
+* `description` -> document description.
+* `lang` -> `<html>`'s `lang` attribute value.
+* `navigation` -> Object. Takes an `order` (number) and a `label` (string) properties which defines ordering and text display in site's main navigation. 
+
 ## Config: `eleventy.config.js`
 The `eleventy.config.js` config file is located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the `config` folder (except for external plugins). Here's a sample of the config object.
 ```js
