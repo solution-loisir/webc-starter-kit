@@ -3,8 +3,20 @@ A starter project for [Eleventy](https://www.11ty.dev/) (11ty) using [WebC](http
 
 This is really a blog stater project, but can be adapted to other means. I entend to use this as a base for my futur projects.
 
-## Use as a template
-Webc starter kit is a template repository. The "Use this template" button can be used to create a new repo with the same structure (recommended). [More details](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## How to use
+Webc starter kit is a template repository. The "Use this template" button can be used to create a new repo with the same structure (recommended). [More details](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template). When this is done:
+
+1. Clone the newly created repo.
+2. Navigate to the directory.
+3. Install dependencies.
+4. Run one of these command.
+    * Local developpment: `npm start`.
+    * [Netlify cli](https://www.netlify.com/products/cli/): `npm run dev`.
+    * Build for production: `npm run build`.
+    * Remove *_site* and start fresh: `npm run clean`.
+    * To debug: `npm run debug`.
+    * To generate favicons from an image: `npm run generate-favicons`.
+    * To create a new post template: `npm run new-post "My Title"`.
 
 ## Features
 * RSS feed through Atom.
