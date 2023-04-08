@@ -26,7 +26,7 @@ Webc starter kit is a template repository. The "Use this template" button can be
 * Comprehensive meta data file to configure site's parameters in one place.
 
 ## Site's meta data
-Located in *src/_data/meta.js*.
+Located in *src/_data/meta.js*. Exports an object used to set defaults and configure functional templates (sitemap, RSS, etc.).
 
 ## Pages
 Pages are located in the `pages` directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the `page` layout. The "Home" page is remapped to project's root index. The following properties may be defined in front matter:
