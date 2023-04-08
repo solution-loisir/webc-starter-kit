@@ -3,6 +3,9 @@ A starter project for [Eleventy](https://www.11ty.dev/) (11ty) using [WebC](http
 
 This is really a blog stater project, but can be adapted to other means. I entend to use this as a base for my futur projects.
 
+## Use as a template
+Webc starter kit is a template repository. Use the "Use this template" button to create a new repo with the same structure. [Learn more here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
 ## Features
 * RSS feed through Atom.
 * Sitemap with `robot.txt` pointing to it.
