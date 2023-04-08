@@ -4,7 +4,7 @@ A starter project for [Eleventy](https://www.11ty.dev/) (11ty) using [WebC](http
 This is really a blog stater project, but can be adapted to other means. I entend to use this as a base for my futur projects.
 
 ## Use as a template
-Webc starter kit is a template repository. Use the "Use this template" button to create a new repo with the same structure. [Learn more here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Webc starter kit is a template repository. The "Use this template" button can be used to create a new repo with the same structure (recommended). [More details](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 ## Features
 * RSS feed through Atom.
@@ -24,6 +24,9 @@ Webc starter kit is a template repository. Use the "Use this template" button to
 * Automation for favicons and new post generation.
 * Minifying HTML, CSS and JavaScript in production.
 * Comprehensive meta data file to configure site's parameters in one place.
+
+## Site's meta data
+Located in *src/_data/meta.js*.
 
 ## Pages
 Pages are located in the `pages` directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the `page` layout. The "Home" page is remapped to project's root index. The following properties may be defined in front matter:
