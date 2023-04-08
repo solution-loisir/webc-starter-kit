@@ -14,9 +14,9 @@ Webc starter kit is a template repository. The "Use this template" button can be
     * [Netlify cli](https://www.netlify.com/products/cli/): `npm run dev`.
     * Build for production: `npm run build`.
     * Remove *_site* and start fresh: `npm run clean`.
-    * To debug: `npm run debug`.
-    * To generate favicons from an image: `npm run generate-favicons`.
-    * To create a new post template: `npm run new-post "My Title"`.
+    * Debug: `npm run debug`.
+    * Generate favicons from an image: `npm run generate-favicons`.
+    * Create a new post template: `npm run new-post "My Title"`.
 
 ## Features
 * RSS feed through Atom.
