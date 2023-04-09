@@ -80,7 +80,7 @@ Webc starter kit uses several plugins.
 ## Collections
 Collections included in Webc starter kit.
 ### `posts` collection
-Contains every `.md` files living in the `posts` directory. Reversed order. Intended for blog posts.
+Contains every `.md` files living in the *posts* directory. Reversed order. Intended for blog posts.
 ### `pages` collection
 Contains every `.webc` files living in the *pages* directory. Ordered ascending by the `navigation.order` property. These represents the pages of the site.
 ### `series` collection
