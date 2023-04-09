@@ -20,7 +20,7 @@ Webc starter kit is a template repository. The "Use this template" button can be
 
 ## Features
 * RSS feed through Atom.
-* Sitemap with `robot.txt` pointing to it.
+* Sitemap with *robot.txt* pointing to it.
 * Site manifest.
 * Tags pages
 * `no-js` class strategy for progressive enhancement.
@@ -32,7 +32,7 @@ Webc starter kit is a template repository. The "Use this template" button can be
 * Image optimization with [eleventy-img](https://www.11ty.dev/docs/plugins/image/).
 * [Serverless](https://www.11ty.dev/docs/plugins/serverless/): uncomment in config file to use.
 * Custom 404 page at the root. May require specific integration depending on your hosting setup/platform.
-* Already setup for [Netlify dev](https://www.netlify.com/products/cli/) and specific configuration through `netlify.toml`.
+* Already setup for [Netlify dev](https://www.netlify.com/products/cli/) and specific configuration through *netlify.toml*.
 * Automation for favicons and new post generation.
 * Minifying HTML, CSS and JavaScript in production.
 * Comprehensive meta data file to configure site's parameters in one place.
@@ -41,14 +41,14 @@ Webc starter kit is a template repository. The "Use this template" button can be
 Located in *src/_data/meta.js*. Exports an object used to set defaults and configure functional templates (sitemap, RSS, etc.).
 
 ## Pages
-Pages are located in the `pages` directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the `page` layout. The "Home" page is remapped to project's root index. The following properties may be defined in front matter:
+Pages are located in the *pages* directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the *page.webc* layout. The *home.webc* page is remapped to project's root index. The following properties may be defined in front matter:
 * `title` -> document title and first heading (`<h1>`).
 * `description` -> document description.
 * `lang` -> `<html>`'s `lang` attribute value.
 * `navigation` -> Object. Takes an `order` (number) and a `label` (string) properties which defines ordering and text display in site's main navigation. 
 
 ## Config: `eleventy.config.js`
-The `eleventy.config.js` config file is located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the `config` folder (except for external plugins). Here's a sample of the config object.
+The *eleventy.config.js* config file is located at the project's root. The config file uses the `addPlugin` method to import the different parts of configuration which all lives in the *config* folder (except for external plugins). Here's a sample of the config object.
 ```js
 return {
   dir: {
@@ -82,12 +82,12 @@ Collections included in Webc starter kit.
 ### `posts` collection
 Contains every `.md` files living in the `posts` directory. Reversed order. Intended for blog posts.
 ### `pages` collection
-Contains every `.webc` files living in the `pages` directory. Ordered ascending by the `navigation.order` property. These represents the pages of the site.
+Contains every `.webc` files living in the *pages* directory. Ordered ascending by the `navigation.order` property. These represents the pages of the site.
 ### `series` collection
-Consist of an object containing all series grouped by name. Only markdown file inside of the `posts` directory and containig a `series` property with a string value (the name of the series). Falsy values will be exluded.
+Consist of an object containing all series grouped by name. Only markdown file inside of the *posts* directory and containig a `series` property with a string value (the name of the series). Falsy values will be exluded.
 ### `tags` collection
 A deduplicated list of all posts tags. Used to generate tags pages.
 ## Generator scripts
-Located in the `process` directory. These are utility node scripts
+Located in the *process* directory. These are utility node scripts
 
 Work in progress...
