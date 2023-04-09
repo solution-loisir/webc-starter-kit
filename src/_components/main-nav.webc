@@ -1,7 +1,5 @@
 <nav class="main-nav">
   <ul role="list" class="flex gap-400">
-    <script webc:type="js">
-      dataSource.map((item) => `<li><a href="${item.page.url}"${item.page.url === $data.page.url ? ` aria-current="page"` : ""}>${item.data.navigation.label}</a></li>`).join("\n");
-    </script>
+    <li webc:for="item of dataSource"><a :href="item.page.url" :aria-current="item.page.url === $data.page.url ? 'page' : null" @text="item.data.navigation.label"></a></li>
   </ul>
 </nav>
