@@ -1,0 +1,8 @@
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-nav a[aria-current="page"] {
+  text-decoration: underline;
+}

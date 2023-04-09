@@ -5,6 +5,8 @@
 @import "blocks/auto-toc.css";
 @import "blocks/prism-okaidia.css";
 @import "blocks/post-list.css";
+@import "blocks/main-nav.css";
+@import "blocks/series-listing.css";
 @import "utilities/wrapper.css";
 @import "utilities/flow.css";
 @import "utilities/utils.css";

@@ -1,0 +1,3 @@
+.series-listing a[aria-current="page"] {
+  color: var(--color-accent);
+}
