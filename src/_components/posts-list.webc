@@ -3,8 +3,10 @@
     // Inspired from https://11ty.webc.fun/recipes/looping-render-function/
   
     if(reverse) source.reverse();
+
+    const _source = limit ? source.slice(0, limit) : source;
   
-    const postListMarkup = source.map((post) => {
+    _source.map((post) => {
       let tags = Array.isArray(post.data.tags) ? post.data.tags : [post.data.tags];
   
       return `<li>
@@ -27,7 +29,5 @@
         <a href="${post.url}">Read post</a>
       </li>`
     });
-    
-    limit ? postListMarkup.slice(0, limit).join("\n") : postListMarkup.join("\n");
   </script>
 </ul>
