@@ -14,7 +14,10 @@ module.exports = function(config) {
   })
   .use(markdownItAnchor, {
     slugify: uslugify,
-    permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true }),
+    permalink: markdownItAnchor.permalink.headerLink({ 
+      safariReaderFix: true,
+      class: "reset-anchor"
+    }),
     level: [2, 3]
   })
   .use(markdownItTocDoneRight, {
