@@ -1,4 +1,4 @@
 <header :class="headerClass">
-  <figure><big>WebC</big></figure>
+  <a href="/" class="reset-anchor"><big>WebC</big></a>
   <main-nav :data-source="$data.collections.pages"></main-nav>
 </header>
