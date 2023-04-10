@@ -1,4 +1,4 @@
-<div class="series-listing">
+<div class="series-listing" webc:if="$data.series">
   <p class="big"><span @text="name" webc:nokeep></span> series!</p>
   <nav>
     <ol class="margin-block-0">

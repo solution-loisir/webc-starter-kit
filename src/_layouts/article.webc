@@ -11,7 +11,7 @@ layout: base.webc
         <p class="small">Published on <date-time :date="$data.page.date"></date-time></p>
       </div>
     </header>
-    <series-listing :name="$data.series" webc:if="series"></series-listing>
+    <series-listing :name="$data.series"></series-listing>
     <div @raw="content"></div>
   </article>
 </main>
