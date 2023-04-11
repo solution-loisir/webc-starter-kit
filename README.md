@@ -40,6 +40,57 @@ Webc starter kit is a template repository. The "Use this template" button can be
 ## Site's meta data
 Located in *src/_data/meta.js*. Exports an object used to set defaults and configure functional templates (sitemap, RSS, etc.).
 
+## Components
+Most components live in the *src/_components* directory. These are authored components and are globally available. There are a few external components as well which are also made globally available through *eleventy.config.js*.
+### author-picture.webc
+* Output: `<picture>` or `<img>`
+* Attributes: any compatible with `<img>` (public)
+* Details: uses <[eleventy-image](https://github.com/11ty/eleventy-img/blob/main/eleventy-image.webc)> to process `src`. Any public attributes will be added to the output. `width`, `sizes`, `class="image"` and `decoding="async"` are preset. Outputs `avif`, `webp` and `jpeg` formats to *_site/images*. Used in article.
+* Usage: 
+```html
+<author-picture 
+  :src="$data.author_image" 
+  :alt="$data.author_image_alt"
+  loading="lazy"
+>
+</author-picture>
+```
+
+### image.webc
+* Output: `<picture>` or `<img>`
+* Attributes: any compatible with `<img>` (public)
+* Details: same as *author-picture.webc*, but with different configuration `width` and `sizes`. Generally used troughout the site.
+* Usage:
+```html
+<image src="https://apod.nasa.gov/apod/image/2208/StargateMilkyWay_Oudoux_1800.jpg" alt="Spectacular night sky from the Nasa showing the milkyway" loading="lazy"></image>
+```
+### auto-toc.webc
+* ouput:
+```html
+<details-utils animate>
+  <details class="contents">
+    <summary class="bold">Contents</summary>
+    <nav class="auto-toc">
+      <ul>
+        <li><a href="#my-title">My Title</a>
+          <ul>
+            <li><a href="#my-other-title">My Other Title</a></li>
+          </ul>
+        </li>
+        ...
+      </ul>
+    </nav>
+  </details>
+</details-utils>
+```
+* Attributes:
+    * `open`: used with a thruty value, it will set the boolean `open` attribute on the `details` element. [Read more about the open attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#attributes).
+* Details: uses [markdown-it-toc-done-right](https://github.com/nagaozen/markdown-it-toc-done-right#readme) under the hood. Works only in markdown files. Also, integrates the [details-utils](https://github.com/zachleat/details-utils) component for animation.
+* Usage:
+```html
+<auto-toc open="true"></auto-toc>
+```
+
 ## Pages
 Pages are located in the *pages* directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the *page.webc* layout. The *home.webc* page is remapped to project's root index. The following properties may be defined in front matter:
 * `title` -> document title and first heading (`<h1>`).
