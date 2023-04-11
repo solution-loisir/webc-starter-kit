@@ -5,14 +5,14 @@ date: 2023-02-24
 lang: en
 published: true
 series: political thinking!
-toc: false
+toc: true
 og_image: ""
 og_image_alt: ""
 og_image_width: ""
 og_image_height: ""
 tags: love
 ---
-<auto-toc></auto-toc>
+<auto-toc open="true"></auto-toc>
 
 ## Our futur
 There is war in this world. Maybe, some day, it will end. I'm writing this as we speak.
