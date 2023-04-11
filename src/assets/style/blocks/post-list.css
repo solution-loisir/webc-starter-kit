@@ -1,4 +1,4 @@
-.post-list li {
+.post-list > li {
   padding-inline: var(--size-400);
   padding-block: var(--size-300);
   flex-basis: 25ch;
@@ -11,4 +11,9 @@
   flex-direction: column;
   justify-content: space-between;
   gap: var(--size-400);
+}
+
+.post-list__tags ul {
+  row-gap: var(--size-100);
+  column-gap: var(--size-200);
 }
