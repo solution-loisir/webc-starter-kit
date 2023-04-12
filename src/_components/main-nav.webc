@@ -1,5 +1,5 @@
 <nav class="main-nav">
   <ul role="list" class="flex gap-400">
-    <li webc:for="item of source"><a :href="item.page.url" :aria-current="item.page.url === $data.page.url ? 'page' : null" @text="item.data.navigation.label"></a></li>
+    <li webc:for="item of source"><a :href="item.page.url" :aria-current="(item.page.url === $data.page.url) ? 'page' : null" @text="item.data.navigation.label"></a></li>
   </ul>
 </nav>
