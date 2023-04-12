@@ -1,3 +1,7 @@
+.gap-100 {
+  gap: var(--size-100);
+}
+
 .gap-200 {
   gap: var(--size-200);
 }

@@ -13,7 +13,7 @@ permalink: feed.xml
   <id>{{ meta.url }}</id>
   <author>
     <name>{{ meta.author.name }}</name>
-    <email>{{ meta.author.email }}</email>
+    <email>{{ meta.author.contact.email.link }}</email>
   </author>
   {%- for post in collections.posts %}
   {%- if post.url %}
