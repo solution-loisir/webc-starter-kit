@@ -90,6 +90,8 @@ Most components live in the *src/_components* directory. These are authored comp
 ```html
 <auto-toc open="true"></auto-toc>
 ```
+### copy-right.webc
+
 
 ## Pages
 Pages are located in the *pages* directory. Excepting the "Home" page, all pages are remapped to project's root and inherit from the *page.webc* layout. The *home.webc* page is remapped to project's root index. The following properties may be defined in front matter:
