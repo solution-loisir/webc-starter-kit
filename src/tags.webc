@@ -3,5 +3,7 @@ layout: page.webc
 pagination:
   data: collections.tags
   size: 1
+  alias: tag
 ---
+<p>Here, you will find posts related to the <strong @text="tag"></strong> tag.</p>
 <posts-list :source="$data.collections[$data.pagination.items[0]]" reverse="true"></posts-list>
