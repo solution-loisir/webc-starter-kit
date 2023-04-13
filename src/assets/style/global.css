@@ -34,8 +34,8 @@ xl: 80rem -> ~1280px
   --padding-lg: clamp(var(--size-600), 8%, var(--size-700));
   --padding-xl: clamp(var(--size-800), 10%, var(--size-900));
   /* Measures */
-  --width-md: min(65ch, var(--min-width, 94vw));
-  --width-lg: min(80ch, var(--min-width, 94vw));
+  --width-md: min(65ch, var(--min-width, 98vw));
+  --width-lg: min(80ch, var(--min-width, 98vw));
   /* Border radius */
   --radius: 7px;
   --radius-pill: 1em;
@@ -50,7 +50,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--color-dark);
   background-color: var(--color-light);
-  padding-bottom: var(--size-900);
   overflow-x: hidden;
 }
 
@@ -84,8 +83,8 @@ h3 {
 
 main {
   display: block;
-  margin-block-start: var(--size-900);
-  margin-block-end: var(--size-900);
+  margin-block: var(--size-900);
+  min-height: 80vh;
 }
 
 a {
