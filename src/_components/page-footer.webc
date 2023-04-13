@@ -1,6 +1,6 @@
 <footer class="page-footer">
   <div class="flex flex-column gap-200 align-center wrapper">
     <copy-right first-in-production="2022-05-25" org-name="My Name"></copy-right>
-    <social-contact></social-contact>
+    <social-contact show-rss="true"></social-contact>
   </div>
 </footer>
