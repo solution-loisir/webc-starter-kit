@@ -8,14 +8,14 @@
       function displayPrevious() {
         if(!previousPost) return "";
         return `<li>
-        <a href="${previousPost.page.url}">Next: ${previousPost.data.title}</a>  
+        <a href="${previousPost.page.url}">Newer: ${previousPost.data.title}</a>  
       </li>`;
       };
 
       function displayNext() {
         if(!nextPost) return "";
         return `<li>
-        <a href="${nextPost.page.url}">Previous: ${nextPost.data.title}</a>  
+        <a href="${nextPost.page.url}">Older: ${nextPost.data.title}</a>  
       </li>`;
       };
 
