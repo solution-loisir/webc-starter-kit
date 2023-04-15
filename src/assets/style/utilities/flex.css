@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+.justify-space-around {
+  justify-content: space-around;
+}
+
 .align-center {
   align-items: center;
 }
