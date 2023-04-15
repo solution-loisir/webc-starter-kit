@@ -1,0 +1,26 @@
+<nav>
+  <ul role="list" class="flex gap-200 justify-space-around">
+    <script webc:type="js">
+      const postIndex = getCollectionItemIndex($data.collections.posts, $data.page);
+      const previousPost = $data.collections.posts[postIndex - 1];
+      const nextPost = $data.collections.posts[postIndex + 1];
+
+      function displayPrevious() {
+        if(!previousPost) return "";
+        return `<li>
+        <a href="${previousPost.page.url}">Next: ${previousPost.data.title}</a>  
+      </li>`;
+      };
+
+      function displayNext() {
+        if(!nextPost) return "";
+        return `<li>
+        <a href="${nextPost.page.url}">Previous: ${nextPost.data.title}</a>  
+      </li>`;
+      };
+
+      `${displayNext()}
+      ${displayPrevious()}`;
+    </script>
+  </ul>
+</nav>
