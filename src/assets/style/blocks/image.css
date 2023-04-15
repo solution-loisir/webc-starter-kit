@@ -1,4 +1,4 @@
 .image {
   border-radius: var(--radius);
-  box-shadow: 3px 3px 10px -3px #000205;
+  box-shadow: 2px 2px 6px -2px hwb(216 5% 85%);
 }

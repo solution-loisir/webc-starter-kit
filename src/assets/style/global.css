@@ -11,6 +11,7 @@ xl: 80rem -> ~1280px
   /* Colors */
   --color-primary: hwb(216 0% 20%);
   --color-accent: hwb(357 35% 1%);
+  --color-light-accent: hwb(357 90% 0%);
   --color-dark: hwb(216 0% 98%);
   --color-light: hwb(216 98% 0%);
   --color-light-blue: hwb(216 90% 0%);

@@ -8,6 +8,7 @@
 @import "blocks/main-nav.css";
 @import "blocks/series-listing.css";
 @import "blocks/page-footer.css";
+@import "blocks/author-card.css";
 @import "utilities/wrapper.css";
 @import "utilities/flow.css";
 @import "utilities/utils.css";

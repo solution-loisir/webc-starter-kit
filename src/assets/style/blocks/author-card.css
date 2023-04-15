@@ -1,0 +1,12 @@
+.author-card {
+  padding-block: var(--size-300);
+  padding-inline: var(--size-400);
+  background-color: var(--color-light-accent);
+  outline: 2.5px dashed var(--color-accent);
+  border-radius: var(--radius-pill);
+  max-width: 30ch;
+}
+
+.author-card img {
+  border-radius: var(--radius);
+}
