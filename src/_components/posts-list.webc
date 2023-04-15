@@ -6,7 +6,7 @@
 
     const _source = limit ? source.slice(0, limit) : source;
 
-    function displayTags(tags, tagsLimit = 4) {
+    function displayTags(tags, tagsLimit) {
       if(!tags.length) return "";
       return `
         <nav class="post-list__tags">
@@ -31,7 +31,7 @@
           </div>
           <div class="line-height-md">
             <p>${truncate(post.data.description)}</p>
-            ${displayTags(tags, tagsLimit)}
+            ${displayTags(tags, tagsLimit || $data.meta.tagsLimit)}
           </div>
         </div>
         <a href="${post.url}">Read post</a>
