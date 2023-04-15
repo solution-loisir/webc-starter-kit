@@ -4,10 +4,20 @@ layout: base.webc
 <main class="wrapper">
   <article class="flow-lg">
     <header class="flow-lg">
-      <h1 @text="title || meta.title"></h1>
+      <div class="line-height-xs">
+        <h1 @text="title || meta.title"></h1>
+        <nav>
+          <ul role="list" class="flex gap-200">
+            <li webc:for="(tag, index) of tags" webc:if="index < meta.tagsLimit">
+              <a :href="'/tags/' + slugify(tag)" @html="'#' + slugify(tag)"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <author-picture :src="$data.author_image" :alt="$data.author_image_alt"></author-picture>
     </header>
     <series-listing :name="$data.series"></series-listing>
     <div @raw="content"></div>
+    <article-footer></article-footer>
   </article>
 </main>
