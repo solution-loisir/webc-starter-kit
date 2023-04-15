@@ -1,1 +1,9 @@
-<eleventy-image @attributes :width="[70, 100]" sizes="(max-width: 48rem) 70px, 100px" class="image"></eleventy-image>
+<figure class="[ author-card ] [ flex flex-column gap-300 ]">
+  <eleventy-image @attributes :width="[70, 100]" sizes="(max-width: 48rem) 70px, 100px"></eleventy-image>
+  <figcaption class="flow-sm line-height-xs">
+    <p class="small">Author: <span @text="$data.author || $data.meta.author.name" webc:nokeep></span></p>
+    <p class="small">Published on: <date-time :date="$data.page.date"></date-time></p>
+    <p class="small" @html="wordcount(striptags($data.content)) + ' words'"></p>
+    <p class="small" @html="Math.ceil(wordcount(striptags($data.content)) / 225) === 1 ? Math.ceil(wordcount(striptags($data.content)) / 225) + ' minute read' : Math.ceil(wordcount(striptags($data.content)) / 225) + ' minutes read'"></p>
+  </figcaption>
+</figure>
