@@ -1,3 +1,4 @@
-<footer>
+<footer class="flow-lg">
+  <author-picture :src="$data.author_image" :alt="$data.author_image_alt"></author-picture>
   <previous-next></previous-next>
 </footer>

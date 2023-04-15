@@ -1,4 +1,4 @@
-.author-card {
+.card {
   padding-block: var(--size-300);
   padding-inline: var(--size-400);
   background-color: var(--color-light-accent);
@@ -7,6 +7,6 @@
   max-width: 30ch;
 }
 
-.author-card img {
+.card img {
   border-radius: var(--radius);
 }
