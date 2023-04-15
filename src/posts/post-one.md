@@ -35,7 +35,8 @@ It is a paradisematic country, in which roasted parts of sentences fly into your
 
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
-> "he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls."
-
+<block-quote>
+"This is a blockquote. He thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls."
+</block-quote>
 
 The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself

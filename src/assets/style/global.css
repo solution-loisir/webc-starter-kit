@@ -35,8 +35,8 @@ xl: 80rem -> ~1280px
   --padding-lg: clamp(var(--size-600), 8%, var(--size-700));
   --padding-xl: clamp(var(--size-800), 10%, var(--size-900));
   /* Measures */
-  --width-md: min(65ch, var(--min-width, 98vw));
-  --width-lg: min(80ch, var(--min-width, 98vw));
+  --width-md: min(65ch, 100vw);
+  --width-lg: min(80ch, 100vw);
   /* Border radius */
   --radius: 7px;
   --radius-pill: 1em;
@@ -100,4 +100,14 @@ a {
 hr {
   border: 0;
   border-bottom: 2.5px dashed var(--color-primary);
+}
+
+blockquote {
+  margin-block: 1em;
+  padding-block: 1em;
+  padding-inline: 2em;
+  border-inline-start: 20px solid var(--color-primary);
+  border-start-end-radius: 1em;
+  border-end-end-radius: 1em;
+  background-color: var(--color-light-blue);
 }
