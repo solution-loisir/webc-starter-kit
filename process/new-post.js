@@ -9,6 +9,7 @@ const data = `---
 title: ${title}
 description: ""
 date: ${formatDateLocal("YYYY-MM-DD")}
+updated: false
 lang: en
 published: false
 series: ""

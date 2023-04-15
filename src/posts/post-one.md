@@ -2,6 +2,7 @@
 title: Post one
 description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 date: 2023-04-13
+updated: 2023-04-15
 lang: en
 published: true
 series: "Post one, two, three"
