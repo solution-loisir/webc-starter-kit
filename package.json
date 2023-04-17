@@ -27,7 +27,7 @@
     "@zachleat/details-utils": "^2.0.2",
     "browserslist": "^4.21.5",
     "dayjs": "^1.11.7",
-    "esbuild": "^0.17.15",
+    "esbuild": "^0.17.17",
     "favicons": "^7.1.1",
     "html-minifier-terser": "^7.1.0",
     "lightningcss": "^1.19.0",
