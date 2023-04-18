@@ -1,9 +1,7 @@
 .post-list > li {
-  padding-inline: var(--size-400);
-  padding-block: var(--size-300);
-  flex-basis: 25ch;
-  flex-grow: 1;
-  flex-shrink: 1;
+  padding-inline: var(--padding-sm);
+  padding-block: var(--padding-md);
+  flex: 1 1 25ch;
   outline: 2.5px dashed var(--color-primary);
   border-radius: var(--radius-pill);
   background-color: var(--color-light-blue);
