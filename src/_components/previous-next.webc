@@ -1,5 +1,5 @@
 <nav>
-  <ul role="list" class="flex gap-200 justify-space-around">
+  <ul role="list" class="flex gap-300 justify-space-around">
     <script webc:type="js">
       const postIndex = getCollectionItemIndex($data.collections.posts, $data.page);
       const previousPost = $data.collections.posts[postIndex - 1];

@@ -18,7 +18,7 @@ xl: 80rem -> ~1280px
   --color-gray: hwb(216 83% 13%);
   --color-white: #fff;
   /* Sizes */
-  --size-font-base: 112.5%; /*clamp(1.125rem, 0.3409vw + 1.0398rem, 1.3125rem);*/
+  --size-font-base: 112.5%;
   --size-100: 0.2rem;
   --size-200: 0.5rem;
   --size-300: 0.8rem;
@@ -30,13 +30,12 @@ xl: 80rem -> ~1280px
   --size-900: 2.4rem;
   --size-1200: 3.9rem;
   /* Padding */
-  --padding-sm: clamp(var(--size-400), 5%, var(--size-500));
-  --padding-md: clamp(var(--size-500), 7%, var(--size-600));
-  --padding-lg: clamp(var(--size-600), 8%, var(--size-700));
-  --padding-xl: clamp(var(--size-800), 10%, var(--size-900));
+  --padding-sm: var(--size-500);
+  --padding-md: var(--size-600);
+  --padding-lg: var(--size-700);
+  --padding-xl: var(--size-900);
   /* Measures */
-  --width-md: min(65ch, 100vw);
-  --width-lg: min(80ch, 100vw);
+  --width-md: min(65ch, 85vw);
   /* Border radius */
   --radius: 7px;
   --radius-pill: 1em;
@@ -67,15 +66,20 @@ h2 {
 }
 
 h3 {
-  font-size: var(--size-800);
+  font-size: var(--size-700);
+}
+
+h4 {
+  font-size: var(--size-500);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  margin-block-start: var(--size-400);
+  margin-block-start: var(--size-700);
 }
 
 :target {
@@ -84,7 +88,7 @@ h3 {
 
 main {
   display: block;
-  margin-block: var(--size-900);
+  margin-block-end: var(--size-900);
   min-height: 80vh;
 }
 
@@ -110,4 +114,12 @@ blockquote {
   border-start-end-radius: 1em;
   border-end-end-radius: 1em;
   background-color: var(--color-light-blue);
+}
+
+@media(max-width: 64ch) {
+  blockquote {
+    margin-inline: -7.5vw;
+    border-start-end-radius: 15%;
+    border-end-end-radius: 15%;
+  }
 }
