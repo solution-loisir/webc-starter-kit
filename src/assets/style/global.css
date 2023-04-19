@@ -106,7 +106,7 @@ hr {
   border-bottom: 2.5px dashed var(--color-primary);
 }
 
-blockquote {
+article blockquote {
   margin-block: 1em;
   padding-block: 1em;
   padding-inline: 2em;
@@ -117,7 +117,7 @@ blockquote {
 }
 
 @media(max-width: 64ch) {
-  blockquote {
+  article blockquote {
     margin-inline: -7.5vw;
     border-start-end-radius: 15%;
     border-end-end-radius: 15%;
