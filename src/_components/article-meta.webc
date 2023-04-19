@@ -1,6 +1,7 @@
 <ul role="list" class="line-height-md">
   <li class="small">Published on: <date-time :date="$data.page.date"></date-time></li>
   <li webc:if="$data.updated" class="small">Updated on: <date-time :date="$data.updated"></date-time></li>
+  <!--- This part is greatly inspired by https://www.brycewray.com/posts/2022/09/word-count-reading-time-eleventy/ --->
   <li class="small" @html="wordcount(striptags($data.content)) + ' words'"></li>
   <li class="small" @html="Math.ceil(wordcount(striptags($data.content)) / 225) === 1 ? Math.ceil(wordcount(striptags($data.content)) / 225) + ' minute read' : Math.ceil(wordcount(striptags($data.content)) / 225) + ' minutes read'"></li>
 </ul>
