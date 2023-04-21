@@ -3,17 +3,15 @@ layout: base.webc
 ---
 <main class="wrapper">
   <article class="flow-lg">
-    <header class="flow-lg">
-      <div class="line-height-xs">
-        <h1 @text="title || meta.title"></h1>
-        <nav>
-          <ul role="list" class="flex gap-200">
-            <li webc:for="(tag, index) of tags" webc:if="index < meta.tagsLimit">
-              <a :href="'/tags/' + slugify(tag)" @html="'#' + slugify(tag)"></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="flow-sm">
+      <h1 @text="title || meta.title"></h1>
+      <nav>
+        <ul role="list" class="flex gap-200">
+          <li webc:for="(tag, index) of tags" webc:if="index < meta.tagsLimit">
+            <a :href="'/tags/' + slugify(tag)" @html="'#' + slugify(tag)"></a>
+          </li>
+        </ul>
+      </nav>
       <article-meta></article-meta>
     </header>
     <series-listing :name="$data.series"></series-listing>
