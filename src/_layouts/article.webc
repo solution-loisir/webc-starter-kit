@@ -2,7 +2,7 @@
 layout: base.webc
 ---
 <main class="wrapper">
-  <article class="flow-lg">
+  <article class="flow flow-lg">
     <header class="flow-sm">
       <h1 @text="title || meta.title"></h1>
       <nav>

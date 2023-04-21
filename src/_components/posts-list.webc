@@ -10,7 +10,7 @@
       if(!tags.length) return "";
       return `
         <nav class="post-list__tags">
-          <ul role="list" class="flex">
+          <ul role="list" class="flex line-height-sm">
             ${tags.map((tag, index) => {
               if(index < tagsLimit) {
                 return `<li><a href="/tags/${slugify(tag)}/" class="small">#${slugify(tag)}</a></li>`;
@@ -25,11 +25,11 @@
   
       return `<li>
         <div class="flow">
-          <div class="flow-sm line-height-sm">
+          <div class="line-height-sm">
             <p class="big bold">${post.data.title}</p>
             <p class="small"><date-time date="${post.date}"></date-time></p>
           </div>
-          <div class="line-height-md">
+          <div>
             <p>${truncate(post.data.description)}</p>
             ${displayTags(tags, tagsLimit || $data.meta.tagsLimit)}
           </div>

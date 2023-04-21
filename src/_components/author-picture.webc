@@ -1,6 +1,6 @@
-<figure class="[ card ] [ flex flex-column gap-300 ]">
+<figure class="[ card ] [ flex flex-column gap-200 ]">
   <eleventy-image @attributes :width="[70, 100]" sizes="(max-width: 48rem) 70px, 100px"></eleventy-image>
-  <figcaption class="flow-sm line-height-xs">
+  <figcaption class="flow flow-xs">
     <p class="small"><strong>Author:</strong> <span @text="$data.author || $data.meta.author.name" webc:nokeep></span></p>
     <p class="small" @text="$data.meta.author.description"></p>
     <a href="/about/" class="small">Learn more about me</a>

@@ -1,15 +1,24 @@
-.flow > * + * {
-  margin-block-start: var(--flow-space, var(--size-400));
+.flow.flow-xs > * + *,
+.flow > .flow-xs > * + * {
+  margin-block-start: var(--size-100);
 }
 
-.flow-sm > * + * {
+.flow.flow-sm > * + *,
+.flow > .flow-sm > * + * {
   margin-block-start: var(--size-200);
 }
 
-.flow-md > * + * {
+.flow > * + *,
+.flow > .flow > * + * {
+  margin-block-start: var(--size-400);
+}
+
+.flow.flow-lg > * + *,
+.flow > .flow-lg > * + * {
   margin-block-start: var(--size-700);
 }
 
-.flow-lg > * + * {
+.flow.flow-xl > * + *,
+.flow > .flow-xl > * + * {
   margin-block-start: var(--size-900);
 }

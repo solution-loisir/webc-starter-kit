@@ -1,4 +1,4 @@
-<ul role="list" class="line-height-md">
+<ul role="list" class="flow-sm">
   <li class="small">Published on: <date-time :date="$data.page.date"></date-time></li>
   <li webc:if="$data.updated" class="small">Updated on: <date-time :date="$data.updated"></date-time></li>
   <!--- This part is greatly inspired by https://www.brycewray.com/posts/2022/09/word-count-reading-time-eleventy/ --->
