@@ -19,8 +19,8 @@
       </li>`;
       };
 
-      `${displayNext()}
-      ${displayPrevious()}`;
+      `${displayPrevious()}
+      ${displayNext()}`;
     </script>
   </ul>
 </nav>
