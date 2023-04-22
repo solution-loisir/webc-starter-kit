@@ -7,7 +7,7 @@ navigation:
   label: "Blog"
 pagination:
   data: collections.posts
-  size: 2
+  size: 8
   alias: posts
 ---
 <posts-list :source="posts"></posts-list>
