@@ -12,9 +12,10 @@ navigation:
 <div class="text-center">
   <a href="/blog/"><big>View all posts</big></a>
 </div>
-<div class="full-width" style="background-color: red; margin-block-end: -3.9rem; min-height: 450px;">
-  <div class="wrapper">
-    <p><big>Me</big></p>
-    <author-picture :src="meta.author.image.src" alt=""></author-picture>
+<div class="[ home-author-section ] [ full-width ]">
+  <div class="flex flex-column align-center gap-300 wrapper padding-block-xxl">
+    <eleventy-image :src="meta.author.image.src" alt="The author. Eagle on a dark background." loading="lazy" :width="[350, 250]" sizes="(max-width: 48rem) 250px, 350px" class="image"></eleventy-image>
+    <p @text="meta.author.description"></p>
+    <a href="/about/">Learn more about the author</a>
   </div>
 </div>

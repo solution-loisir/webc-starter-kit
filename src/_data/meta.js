@@ -14,7 +14,7 @@ module.exports = {
   author: {
     name: "My Name",
     image: {
-      src: "src/assets/images/bird.jpg",
+      src: "./src/assets/images/bird.jpg",
       alt: "Eagle as profile picture"
     },
     description: "A brief description of me as an author.",
