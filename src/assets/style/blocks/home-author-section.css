@@ -1,6 +1,6 @@
 .home-author-section {
   background: #0052cc;
-  background: linear-gradient(180deg, #0052cc 0%, #004dc0 12.5%, #0048b4 25%, #0043a7 37.5%, #003e9b 50%, #00398f 62.5%, #003483 75%, #003076 87.5%, #002b6a 100%);
+  background: var(--gradient-primary);
   margin-block-end: -3.9rem; 
   min-height: 450px;
   color: var(--color-light);

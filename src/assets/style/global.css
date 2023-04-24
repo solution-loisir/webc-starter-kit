@@ -17,6 +17,7 @@ xl: 80rem -> ~1280px
   --color-light-blue: hwb(216 90% 0%);
   --color-gray: hwb(216 83% 13%);
   --color-white: #fff;
+  --gradient-primary: linear-gradient(180deg, #0052cc 0%, #004dc0 12.5%, #0048b4 25%, #0043a7 37.5%, #003e9b 50%, #00398f 62.5%, #003483 75%, #003076 87.5%, #002b6a 100%);
   /* Sizes */
   --size-font-base: 112.5%;
   --size-100: 0.2rem;
