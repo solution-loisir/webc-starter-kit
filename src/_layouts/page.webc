@@ -4,5 +4,5 @@ layout: base.webc
 <main class="wrapper padding-block-xxl flow flow-lg">
   <h1 @text="title || meta.title"></h1>
   <p @text="description"></p>
-  <div @raw="content" class="flow"></div>
+  <div @raw="content" class="flow-xl"></div>
 </main>
