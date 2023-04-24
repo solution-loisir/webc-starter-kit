@@ -1,5 +1,6 @@
 .wrapper {
   margin-inline: auto;
   width: var(--width-md);
-  padding-block: var(--padding-md);
+  padding-block-start: var(--padding-md);
+  padding-block-end: var(--padding-xxl);
 }

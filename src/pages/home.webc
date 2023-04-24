@@ -12,3 +12,9 @@ navigation:
 <div class="text-center">
   <a href="/blog/"><big>View all posts</big></a>
 </div>
+<div class="full-width" style="background-color: red; margin-block-end: -3.9rem; min-height: 450px;">
+  <div class="wrapper">
+    <p><big>Me</big></p>
+    <author-picture :src="meta.author.image.src" alt=""></author-picture>
+  </div>
+</div>

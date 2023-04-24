@@ -34,6 +34,7 @@ xl: 80rem -> ~1280px
   --padding-md: var(--size-600);
   --padding-lg: var(--size-700);
   --padding-xl: var(--size-900);
+  --padding-xxl: var(--size-1200);
   /* Measures */
   --width-md: min(65ch, 85vw);
   /* Border radius */
@@ -88,8 +89,7 @@ h4 {
 
 main {
   display: block;
-  margin-block-end: var(--size-900);
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 a {
