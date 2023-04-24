@@ -10,7 +10,3 @@
 .wrapper.padding-block-xxl {
   padding-block: var(--padding-xxl);
 }
-
-.wrapper.padding-start-xxl {
-  padding-block-start: var(--padding-xxl);
-}
