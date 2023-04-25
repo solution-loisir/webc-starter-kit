@@ -40,7 +40,7 @@
   <body>
     <page-header header-class="page-header"></page-header>
     <slot @raw="content" webc:nokeep></slot>
-    <a href="#top" data-id="top-button" class="[ top-button ] [ button button-accent]">Back to top</a>
+    <a href="#top" data-id="top-button" class="top-button button">Back to top</a>
     <page-footer></page-footer>
   </body>
 </html>

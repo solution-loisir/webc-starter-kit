@@ -13,6 +13,8 @@ xl: 80rem -> ~1280px
   --color-primary-darker: hwb(216 0% 30%);
   --color-primary-transparent: hwb(216 0% 20% / 0.8);
   --color-accent: hwb(357 35% 1%);
+  --color-accent-darker: hwb(357 35% 31%);
+  --color-accent-transparent: hwb(357 35% 1% / 0.8);
   --color-light-accent: hwb(357 90% 0%);
   --color-dark: hwb(216 0% 98%);
   --color-light: hwb(216 98% 0%);

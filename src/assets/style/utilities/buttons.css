@@ -8,8 +8,14 @@
   color: var(--color-light);
 }
 
+.button.button-primary {
+  background-color: var(--color-primary-transparent);
+  border: 2px solid var(--color-primary-darker);
+  color: var(--color-light);
+}
+
 .button.button-accent {
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  background-color: var(--color-accent-transparent);
+  border: 2px solid var(--color-accent-darker);
   color: var(--color-dark);
 }
