@@ -26,6 +26,7 @@ Webc starter kit is a template repository. The "Use this template" button can be
 * `no-js` class strategy for progressive enhancement.
 * Series for posts.
 * Table of contents for posts.
+* Back to top button.
 * UNSTABLE: draft feature for posts. This feature prevents production build to complete. See [#59](https://github.com/11ty/eleventy-plugin-webc/issues/59).
 * JS pipeline with [esbuild](https://esbuild.github.io/).
 * CSS pipeline with [Lightning CSS](https://lightningcss.dev/).
