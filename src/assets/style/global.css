@@ -22,6 +22,7 @@ xl: 80rem -> ~1280px
   --color-gray: hwb(216 83% 13%);
   --color-white: #fff;
   --gradient-primary: linear-gradient(180deg, hwb(216 0% 20%) 0%, hwb(216 0% 25%) 12.5%, hwb(216 0% 29%) 25%, hwb(216 0% 35%) 37.5%, hwb(216 0% 39%) 50%, hwb(216 0% 44%) 62.5%, hwb(216 0% 44%) 75%, hwb(216 0% 39%) 87.5%, hwb(216 0% 35%) 100%);
+  --webkit-gradient-primary: -webkit-linear-gradient(180deg, hwb(216 0% 20%) 0%, hwb(216 0% 25%) 12.5%, hwb(216 0% 29%) 25%, hwb(357 35% 35%) 37.5%, hwb(216 0% 39%) 50%, hwb(357 35% 44%) 62.5%, hwb(357 35% 44%) 75%, hwb(357 35% 39%) 87.5%, hwb(216 0% 35%) 100%);
   /* Sizes */
   --size-font-base: 112.5%;
   --size-100: 0.2rem;

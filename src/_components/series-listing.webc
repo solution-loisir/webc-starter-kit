@@ -1,5 +1,5 @@
 <div class="series-listing" webc:if="$data.series">
-  <p class="big"><span @text="name" webc:nokeep></span> series!</p>
+  <p><span @text="name" webc:nokeep></span> series!</p>
   <nav>
     <ol class="margin-block-0">
       <li webc:for="series of $data.collections.series[name]"><a :href="series.page.url" :aria-current="series.page.url === $data.page.url ? 'page' : null" @text="series.data.title"></a></li>
