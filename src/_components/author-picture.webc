@@ -1,4 +1,4 @@
-<figure class="[ card ] [ flex flex-column gap-200 ]">
+<figure class="[ card ] [ flex flex-column gap-200 margin-inline-auto margin-block-1200 ]">
   <eleventy-image @attributes :width="[70, 100]" sizes="(max-width: 48rem) 70px, 100px"></eleventy-image>
   <figcaption class="flow flow-xs">
     <p class="small">Author: <strong @text="$data.author || $data.meta.author.name"></strong></p>
