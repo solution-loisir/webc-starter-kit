@@ -57,13 +57,13 @@ Most components live in the *src/_components* directory. These are authored comp
 </author-picture>
 ```
 
-### image.webc
+### image-md.webc
 * Output: `<picture>` or `<img>`
 * Attributes: any compatible with `<img>` (public)
 * Details: same as *author-picture.webc*, but with different configuration `width` and `sizes`. Generally used troughout the site.
 * Usage:
 ```html
-<image src="https://apod.nasa.gov/apod/image/2208/StargateMilkyWay_Oudoux_1800.jpg" alt="Spectacular night sky from the Nasa showing the milkyway" loading="lazy"></image>
+<image-md src="https://apod.nasa.gov/apod/image/2208/StargateMilkyWay_Oudoux_1800.jpg" alt="Spectacular night sky from the Nasa showing the milkyway" loading="lazy"></image-md>
 ```
 ### auto-toc.webc
 * ouput:
