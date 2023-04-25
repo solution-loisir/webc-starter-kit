@@ -1,3 +1,4 @@
 <blockquote :cite="cite || null">
   <slot></slot>
+  <p webc:if="cite">Source : <a :href="cite" @text="cite"></a></p>
 </blockquote>
