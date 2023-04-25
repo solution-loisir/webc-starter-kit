@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html :lang="lang || 'en'" id="page-top" class="no-js">
+<html :lang="lang || 'en'" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,6 +40,7 @@
   <body>
     <page-header header-class="page-header"></page-header>
     <slot @raw="content" webc:nokeep></slot>
+    <a href="#top" data-id="top-button" class="[ top-button ] [ button button-accent]">Back to top</a>
     <page-footer></page-footer>
   </body>
 </html>

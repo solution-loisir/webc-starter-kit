@@ -1,0 +1,15 @@
+.button {
+  padding-block: var(--size-100);
+  padding-inline: var(--size-300);
+  background-color: var(--color-primary-transparent);
+  border: 2px solid var(--color-primary-darker);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.button.button-accent {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  color: var(--color-dark);
+}
