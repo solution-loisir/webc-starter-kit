@@ -1,7 +1,5 @@
-<details-utils animate webc:if="$data.toc" webc:raw>
-  <details class="contents" :open="open || null">
-    <summary class="bold">Contents</summary>
-    
-    [toc]
-  </details>
-</details-utils>
+<details class="contents" :open="open || null" webc:if="$data.toc">
+  <summary class="bold">Contents</summary>
+  
+  [toc]
+</details>

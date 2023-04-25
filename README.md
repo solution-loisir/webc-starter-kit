@@ -67,25 +67,23 @@ Most components live in the *src/_components* directory. These are authored comp
 ### auto-toc.webc
 * ouput:
 ```html
-<details-utils animate>
-  <details class="contents">
-    <summary class="bold">Contents</summary>
-    <nav class="auto-toc">
-      <ul>
-        <li><a href="#my-title">My Title</a>
-          <ul>
-            <li><a href="#my-other-title">My Other Title</a></li>
-          </ul>
-        </li>
-        ...
-      </ul>
-    </nav>
-  </details>
-</details-utils>
+<details class="contents">
+  <summary class="bold">Contents</summary>
+  <nav class="auto-toc">
+    <ul>
+      <li><a href="#my-title">My Title</a>
+        <ul>
+          <li><a href="#my-other-title">My Other Title</a></li>
+        </ul>
+      </li>
+      ...
+    </ul>
+  </nav>
+</details>
 ```
 * Attributes:
     * `open`: used with a thruty value, it will set the boolean `open` attribute on the `details` element. [Read more about the open attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details#attributes).
-* Details: uses [markdown-it-toc-done-right](https://github.com/nagaozen/markdown-it-toc-done-right#readme) under the hood. Works only in markdown files. Also, integrates the [details-utils](https://github.com/zachleat/details-utils) component for animation.
+* Details: uses [markdown-it-toc-done-right](https://github.com/nagaozen/markdown-it-toc-done-right#readme) under the hood. Works only in markdown files.
 * Usage:
 ```html
 <auto-toc open="true"></auto-toc>
