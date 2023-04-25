@@ -42,6 +42,10 @@
   margin-block: 0;
 }
 
+.padding-block-200 {
+  padding-block: var(--size-200);
+}
+
 .text-center {
   text-align: center;
 }

@@ -3,6 +3,8 @@
   <figcaption class="flow flow-xs">
     <p class="small">Author: <strong @text="$data.author || $data.meta.author.name"></strong></p>
     <p class="small" @text="$data.meta.author.description"></p>
-    <a href="/about/" class="small">Learn more about me</a>
+    <div class="text-center padding-block-200">
+      <a href="/about/" class="button button-accent">Learn more about me</a>
+    </div>
   </figcaption>
 </figure>
