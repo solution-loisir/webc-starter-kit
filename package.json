@@ -28,7 +28,7 @@
     "dayjs": "^1.11.7",
     "esbuild": "^0.17.15",
     "favicons": "^7.1.2",
-    "html-minifier-terser": "^7.1.0",
+    "html-minifier-terser": "^7.2.0",
     "lightningcss": "^1.19.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
