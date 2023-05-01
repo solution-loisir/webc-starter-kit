@@ -1,4 +1,5 @@
 .top-button {
+  display: block;
   position: fixed;
   right: var(--size-500);
   bottom: var(--size-400);
@@ -6,8 +7,14 @@
   opacity: 0;
 }
 
+@media(max-width: 64ch) {
+  .top-button {
+    right: 0;
+  }
+}
+
 .no-js .top-button {
-  opacity: 1;
+  display: none;
 }
 
 .opacity-increase {
@@ -46,4 +53,12 @@
   60% {opacity: 0.5;}
   80% {opacity: 0.3;}
   100% {opacity: 0;}
+}
+
+.top-button-static {
+  display: none;
+}
+
+.no-js .top-button-static {
+  display: initial;
 }

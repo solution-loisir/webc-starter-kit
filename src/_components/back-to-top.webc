@@ -1,0 +1,22 @@
+<a href="#top" data-id="top-button" class="top-button" title="Back to top">
+  <svg width="1.5rem" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="navigation" preserveAspectRatio="xMidYMid meet"><path fill="#0052cccc" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path fill="#fafcff" d="M22 29v-9h7L18 7L7 20h7v9z"></path></svg>
+</a>
+
+<script>
+  customElements.define("back-to-top", class extends HTMLElement {
+    connectedCallback() {
+      const toTopButton = this.querySelector('[data-id="top-button"]');
+      const visibilityThreshold = Math.floor(document.body.scrollHeight * 0.3);
+  
+      window.addEventListener("scroll", () => {
+        if(document.body.scrollTop > visibilityThreshold || document.documentElement.scrollTop > visibilityThreshold) {
+          toTopButton.classList.remove("opacity-decrease");
+          toTopButton.classList.add("opacity-increase");
+        } else if(toTopButton.classList.contains("opacity-increase")) {
+          toTopButton.classList.remove("opacity-increase");
+          toTopButton.classList.add("opacity-decrease");
+        }
+      });
+    }
+  });
+</script>
