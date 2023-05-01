@@ -40,7 +40,7 @@
   <body>
     <page-header header-class="page-header"></page-header>
     <slot @raw="content" webc:nokeep></slot>
-    <back-to-top></back-to-top>
+    <back-to-top webc:if="top_button"></back-to-top>
     <page-footer></page-footer>
   </body>
 </html>

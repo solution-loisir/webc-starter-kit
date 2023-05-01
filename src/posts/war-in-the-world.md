@@ -6,6 +6,7 @@ lang: en
 published: true
 series: political thinking!
 toc: true
+top_button: true
 og_image: ""
 og_image_alt: ""
 og_image_width: ""

@@ -14,6 +14,7 @@ lang: en
 published: false
 series: ""
 toc: false
+top_button: false
 og_image: ""
 og_image_alt: ""
 og_image_width: ""
