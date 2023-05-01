@@ -3,7 +3,9 @@ const meta = require("../_data/meta");
 module.exports = {
   layout: "article.webc",
   //eleventyExcludeFromCollections: (data) => meta.isProduction && !data.published ? true : false,
-  permalink: (data) => meta.isProduction && !data.published ? false : `blog/posts/${data.page.fileSlug}/`,
+  permalink(data) {
+    return meta.isProduction && data.published === false ? false : `blog/posts/${data.page.fileSlug}/`;
+  },
   og_type: "article",
   og_author: meta.canonical("/about/"),
   author: meta.author.name,
