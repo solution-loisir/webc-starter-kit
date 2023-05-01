@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  url: process.env.URL || "http://localhost:8080",
+  url: process.env.SITE_URL || "http://localhost:8080",
   canonical(pathBase) {
     return path.join(this.url, pathBase);
   },
