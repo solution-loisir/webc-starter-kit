@@ -13,10 +13,6 @@
   }
 }
 
-.no-js .top-button {
-  display: none;
-}
-
 .opacity-increase {
   animation-name: opacity-increase;
   animation-duration: 0.5s;
@@ -53,12 +49,4 @@
   60% {opacity: 0.5;}
   80% {opacity: 0.3;}
   100% {opacity: 0;}
-}
-
-.top-button-static {
-  display: none;
-}
-
-.no-js .top-button-static {
-  display: initial;
 }
