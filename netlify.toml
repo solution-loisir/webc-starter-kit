@@ -12,7 +12,7 @@ node_bundler = "esbuild"
 for = "/*"
 
   [headers.values]
-  Content-Security-Policy = "default-src https:; img-src self www.w3.org"
+  Content-Security-Policy = "default-src https:; img-src 'self' www.w3.org"
   Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
   X-Frame-Options = "SAMEORIGIN"
   X-XSS-Protection = "1; mode=block"
