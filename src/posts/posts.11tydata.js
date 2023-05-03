@@ -2,7 +2,11 @@ const meta = require("../_data/meta");
 
 module.exports = {
   layout: "article.webc",
-  //eleventyExcludeFromCollections: (data) => meta.isProduction && !data.published ? true : false,
+  eleventyComputed: {
+    eleventyExcludeFromCollections(data) {
+      return meta.isProduction && data.published === false ? true : false;
+    }
+  },
   permalink(data) {
     return meta.isProduction && data.published === false ? false : `blog/posts/${data.page.fileSlug}/`;
   },
