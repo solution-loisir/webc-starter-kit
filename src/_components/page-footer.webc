@@ -1,6 +1,19 @@
 <footer class="page-footer">
   <div class="flex flex-column gap-400 align-center wrapper padding-block-md">
-    <social-contact show-rss="true"></social-contact>
+    <social-contact>
+      <li>
+        <a :href="$data.meta.rss['link']" class="flex flex-column gap-100 align-center reset-anchor">
+          <slot @html="$data.meta.rss['icon']" webc:nokeep></slot>
+          <p @text="$data.meta.rss['label']" class="small"></p>
+        </a>
+      </li>
+      <li>
+        <a :href="$data.meta.top['link']" class="flex flex-column gap-100 align-center reset-anchor">
+          <slot @html="$data.meta.top['icon']" webc:nokeep></slot>
+          <p @text="$data.meta.top['label']" class="small"></p>
+        </a>
+      </li>
+    </social-contact>
     <copy-right first-in-production="2022-05-25" org-name="My Name"></copy-right>
   </div>
 </footer>

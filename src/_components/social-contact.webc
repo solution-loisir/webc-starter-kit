@@ -1,16 +1,11 @@
 <nav>
-  <ul role="list" class="flex gap-200">
+  <ul role="list" class="flex justify-space-around gap-200">
     <li webc:for="(key, value) in $data.meta.author.contact">
       <a :href="value['link']" class="flex flex-column gap-100 align-center reset-anchor" rel="me">
         <slot @html="value['icon']" webc:nokeep></slot>
         <p @text="value['label']" class="small"></p>
       </a>
     </li>
-    <li webc:if="showRss === 'true' && showRss !== 'false'">
-      <a :href="$data.meta.rss['link']" class="flex flex-column gap-100 align-center reset-anchor">
-        <slot @html="$data.meta.rss['icon']" webc:nokeep></slot>
-        <p @text="$data.meta.rss['label']" class="small"></p>
-      </a>
-    </li>
+    <slot></slot>
   </ul>
 </nav>
