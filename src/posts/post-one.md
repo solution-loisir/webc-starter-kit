@@ -37,7 +37,7 @@ It is a paradisematic country, in which roasted parts of sentences fly into your
 #### Heading H4
 Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
 
-<block-quote cite="http://localhost:8080/blog/posts/post-one/">
+<block-quote cite="https://webc-starter-kit.netlify.app/blog/posts/post-one/">
 "This is a blockquote. He thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls."
 </block-quote>
 
