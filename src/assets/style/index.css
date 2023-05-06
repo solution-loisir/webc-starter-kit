@@ -11,9 +11,9 @@
 @import "blocks/card.css";
 @import "blocks/home-author-section.css";
 @import "blocks/top-button.css";
+@import "blocks/buttons.css";
 @import "utilities/wrapper.css";
 @import "utilities/flow.css";
 @import "utilities/utils.css";
 @import "utilities/flex.css";
 @import "utilities/anchors.css";
-@import "utilities/buttons.css";

@@ -6,6 +6,12 @@
   border-radius: var(--radius-pill);
   text-decoration: none;
   color: var(--color-light);
+  min-width: 15ch;
+  text-align: center;
+}
+
+.button:active {
+  background-color: var(--color-primary-darker);
 }
 
 .button.button-primary {
@@ -14,8 +20,16 @@
   color: var(--color-light);
 }
 
+.button.button-primary:active {
+  background-color: var(--color-primary-darker);
+}
+
 .button.button-accent {
   background-color: var(--color-accent-transparent);
   border: 2px solid var(--color-accent-darker);
   color: var(--color-dark);
+}
+
+.button.button-accent:active {
+  background-color: var( --color-accent-darker);
 }

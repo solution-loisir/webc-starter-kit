@@ -34,7 +34,7 @@
             ${displayTags(tags, tagsLimit || $data.meta.tagsLimit)}
           </div>
         </div>
-        <a href="${post.url}">Read post</a>
+        <a href="${post.url}" class="button align-self-center">Read post</a>
       </li>`
     }).join("\n");
   </script>

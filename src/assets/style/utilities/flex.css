@@ -7,12 +7,20 @@
   justify-content: center;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
 .justify-space-around {
   justify-content: space-around;
 }
 
 .align-center {
   align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 .flex-column {
