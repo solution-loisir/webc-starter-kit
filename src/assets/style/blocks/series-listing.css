@@ -7,5 +7,6 @@
 }
 
 .series-listing a[aria-current="page"] {
-  color: var(--color-accent);
+  background-color: #fbcbcf;
+  border-radius: var(--radius);
 }
