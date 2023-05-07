@@ -6,7 +6,7 @@ module.exports = function(config) {
 
   config.addExtension("js", {
     outputFileExtension: "js",
-    async compile(inputContent, inputPath) {
+    compile(inputContent, inputPath) {
 
       if(inputPath !== jsIndex) return;
 
