@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--- Add `class="no-js"` to html if needed and uncomment script at line 20. --->
 <html :lang="lang || 'en'">
   <head>
     <meta charset="utf-8">
@@ -17,7 +16,6 @@
     </script>
     <script defer :src="getBundleFileUrl('js')" webc:keep></script>
     <script defer src="/assets/js/index.js" webc:keep></script>
-    <!--- <script webc:raw>document.documentElement.classList.remove("no-js");</script> --->
     <link rel="stylesheet" type="text/css" href="/assets/style/index.css" webc:raw>
     <style @raw="getBundle('css')" webc:keep></style>
     <link rel="alternate" type="application/atom+xml" :title="meta.title" :href="meta.canonical('feed.xml')">

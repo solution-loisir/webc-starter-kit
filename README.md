@@ -22,8 +22,7 @@ Webc starter kit is a template repository. The "Use this template" button can be
 * RSS feed through Atom.
 * Sitemap with *robot.txt* pointing to it.
 * Site manifest.
-* Tags pages
-* `no-js` class strategy for progressive enhancement.
+* Tags pages.
 * Series for posts.
 * Table of contents for posts.
 * Back to top button.
